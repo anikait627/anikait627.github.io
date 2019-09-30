@@ -1,0 +1,13 @@
+.pic{
+    margin:10px;
+}
+
+#doc{
+    text-align: center;    
+}
+
+#allCont{
+    display: flex;
+    justify-content: center;
+}
+
