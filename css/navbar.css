@@ -1,0 +1,65 @@
+  /* nav bar links */
+  .nav-bar-nav {
+    padding: 0 100px; 
+    position: fixed;
+    z-index: 1;
+    background-color: transparent;
+    width: 100%;
+    transition:500ms ease;
+  }
+  .nav-bar-list {
+    display: inline-block;
+    height: 56px;
+    padding: 0;
+    margin: 0;
+  }
+  .nav-bar-link {
+    line-height: 56px;
+    display: inline-block;
+    margin: 0 16px;
+  }
+  
+  .nav-left-home {
+    float: left;
+    display: inline-block;
+  }
+  
+  .nav-right-home {
+    float: right;
+    display: inline-block;
+  }
+  
+  .nav-bar-link > a {
+    color: lightpink;
+    font-size: 18px;
+  }
+  
+  .nav-bar-link > a:hover,
+  .nav-bar-link  > a:focus,
+  .nav-bar-link > a:active {
+    color: #46B1C9;
+    text-decoration: none;
+  }
+  
+  #nav-bar-link-name {
+    float: left;
+    margin: 0 16px 0 0 ;
+  }
+
+  .nav-bar-nav.scrolled {
+    background-color: white;
+  }
+
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .nav-bar-nav {
+    padding: 0 16px;
+  }
+
+  .nav-bar-link {
+    line-height: 56px;
+    display: inline-block;
+    margin: 0 8px;
+    float: none;
+  }
+}
