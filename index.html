@@ -40,13 +40,18 @@
     });
     $(function(){
       let arr =['Hola! ', 
-                'Hello! ','여보세요! ',
+                'Aloha! ','여보세요! ',
                 'नमस्ते! ','こんにちは! ',
                 '你好! ', 'Bonjour! ',
                 'Привет! ','ਹੈਲੋ!',
                 'Talofa! ', 'Salut! ',
                 'ஹலோ!','Γεια σας!',
-                'Ciao!','สวัสดี!']
+                'Ciao!','สวัสดี!',
+                'Guten Tag!', 'Shalom!',
+                'ሰላም!','გამარჯობა!',
+                'γεια σας!','ສະບາຍດີ!',
+                'سلام!', 'שלום!',
+                'Здраво!','Hej!']
       setInterval(function() {
         $("#hello-culture").text(arr[Math.floor(Math.random()*arr.length)])
       }, 2000)
