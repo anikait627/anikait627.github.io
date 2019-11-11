@@ -47,7 +47,7 @@
   }
 
   .nav-bar-nav.scrolled {
-    background-color: white;
+    background-color: inherit;
   }
 
 @media screen and (max-width: 600px) {

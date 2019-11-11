@@ -10,14 +10,3 @@ function darkLight() {
        localStorage.toggled = "";
     }
  }
-
-// $('.nav-bar-nav.scrolled').toggleClass(localStorage.toggled);
-// function darkLight() {
-//     if (localStorage.toggled != 'nightmode-nav-bar') {
-//        $('.nav-bar-nav.scrolled').toggleClass('nightmode-nav-bar', true);
-//        localStorage.toggled = "nightmode-nav-bar";
-//     } else {
-//        $('body').toggleClass('nightmode-nav-bar', false).css("transition","1s all ease");
-//        localStorage.toggled = "";
-//     }
-//  }
