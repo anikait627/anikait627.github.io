@@ -1,7 +1,7 @@
 /* GLOBAL STYLES */
 * {
     font-family: 'DM Sans', 'Helvetica', 'Arial', sans-serif;
-    color: #212121;
+    /* color: #212121; */
     /* font-size: 1rem; */
     font-weight: 400;
   }
@@ -106,7 +106,7 @@
     .project-information {
       background-color: transparent;
       margin: 0 12px 0 0;
-      color: black;
+      /* color: black; */
       border-radius: 2px;
       font-size: 11px;
       display: inline-block;
@@ -158,7 +158,7 @@
   }
   #icon-transform:hover{
     transform: scale(1.25);
-    color: #46B1C9;
+    color: #3581B8;
   }
   
   /* lines up titles with rows*/
@@ -222,3 +222,8 @@
     }
   }
   /* #46B1C9 light-dark blue */
+  .nightmode{
+    color: white;
+    background-color: rgb(80, 102, 128);
+    transition: 1s all ease;
+  }
