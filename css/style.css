@@ -112,7 +112,7 @@
       display: inline-block;
       padding: 4px 8px;
     }
-    #fullhouse-button{
+    #project-button{
       background-color: #80CED7;
       color: white;
       padding: 15px 32px;
@@ -120,7 +120,7 @@
       font-size: 16px;
       border-radius: 12px;
     }
-    #fullhouse-button:hover{
+    #project-button:hover{
       background-color: lightpink;
       border-color: white;
     }
@@ -226,5 +226,8 @@
     color: white;
     background-color: rgb(80, 102, 128);
     transition: 1s all ease;
+  }
+  #cononco-picture{
+    margin-left: 60px;
   }
   
