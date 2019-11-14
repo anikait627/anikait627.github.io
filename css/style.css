@@ -1,8 +1,6 @@
 /* GLOBAL STYLES */
 * {
     font-family: 'DM Sans', 'Helvetica', 'Arial', sans-serif;
-    /* color: #212121; */
-    /* font-size: 1rem; */
     font-weight: 400;
   }
   
@@ -41,16 +39,14 @@
     padding-bottom: 20px;
   }
   
-  
   /* WORK SECTION */
-  
   .section-heading {
     font-weight: 700;
     font-size: 28px;
     margin-bottom: 24px;
   }
   
-  .project-section-wrapper{
+  .project-wrapper{
     max-width: 780px;
     margin: auto;
     padding-top: 80px;
@@ -112,6 +108,7 @@
       display: inline-block;
       padding: 4px 8px;
     }
+
     #project-button{
       background-color: #80CED7;
       color: white;
@@ -120,11 +117,12 @@
       font-size: 16px;
       border-radius: 12px;
     }
+
     #project-button:hover{
       background-color: lightpink;
       border-color: white;
     }
-  /*  */
+
   a.link-underline {
     text-decoration: underline;
   }
@@ -161,7 +159,6 @@
     color: #3581B8;
   }
   
-  /* lines up titles with rows*/
   .row {
     margin: 0;
   }
@@ -171,46 +168,19 @@
     padding-top: 30px;
     margin: auto;
   }
+
   .about-description{
     font-size: 1.25em;
     font-size: 18px;
     padding: 8px 0;
   }
+
   #my-picture{
     border-radius: 50%;
     height: 200px;
     width: 200px;
   }
 
-  @keyframes heartBeat {
-    0% {
-      -webkit-transform: scale(1);
-      transform: scale(1);
-    }
-  
-    14% {
-      -webkit-transform: scale(1.3);
-      transform: scale(1.3);
-    }
-  
-    28% {
-      -webkit-transform: scale(1);
-      transform: scale(1);
-    }
-  
-    42% {
-      -webkit-transform: scale(1.3);
-      transform: scale(1.3);
-    }
-  
-    70% {
-      -webkit-transform: scale(1);
-      transform: scale(1);
-    }
-  }
-  #heart-beat{
-    animation: heartBeat 2s infinite;
-  }
   @media screen and (max-width: 768px){
     .index-heading{
       font-size: 26px;
@@ -221,16 +191,18 @@
       margin-right: 25px;
     }
   }
-  /* #46B1C9 light-dark blue */
+
   .nightmode{
     color: white;
     background-color: rgb(80, 102, 128);
     transition: 1s all ease;
   }
+
+  /* picture margins */
   #cononco-picture{
     margin-top: 50px;
   }
-  
+
   #lspace-pic{
     margin-top: 15px;
     margin-left: 60px;
