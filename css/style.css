@@ -228,12 +228,15 @@
     transition: 1s all ease;
   }
   #cononco-picture{
-    margin-left: 60px;
+    margin-top: 50px;
   }
   
   #lspace-pic{
-    margin-top: 20px;
-    margin-left: 40px;
-    width: 280px;
+    margin-top: 15px;
+    margin-left: 60px;
     height: 210px;
+  }
+
+  #fullhouse-pic{
+    margin-top: 13px;
   }
