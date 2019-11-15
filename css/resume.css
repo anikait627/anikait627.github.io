@@ -1,0 +1,87 @@
+/* heading and intro */
+.main-body{
+    padding-top: 50px;
+    display: flex;
+}
+/* side margin */
+.personal-info{
+    position: fixed;
+}
+
+#my-picture{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    margin-bottom: 20px;
+
+}
+.heading{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.skill-container{
+    margin-left: 55px;
+    width: 200px;
+}
+.my-tags{
+    margin-left: 50px;
+}
+
+#icon-transform{
+    color: 	lightpink;
+    margin-right: 10px;
+}
+
+#icon-transform:hover{
+    color: steelblue;
+}
+/* night mode */
+.nightmode{
+    color: white;
+    background-color: black;
+    transition: 1s all ease;
+  }
+
+/* work section plus main body */
+.all-work-container{
+  margin-left: 400px;
+  width: 800px;
+}
+.title{
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.description-container{
+    border: 1px solid #eee;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+.tools{
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px){
+    /* .personal-info{
+        display: none;
+    } */
+    .all-work-container{
+        margin-left: 0px;
+        margin: center;
+    }
+    .skill-container{
+        display: none;
+    }
+    .main-body{
+        display: initial;
+    }
+    .personal-info{
+        position: relative;
+    }
+}
+a:hover, a:active, a:focus {
+text-decoration: underline;
+color: inherit;
+outline: none;
+}

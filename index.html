@@ -13,8 +13,7 @@
 
   <!-- external style sheets -->
   <link href="./css/style.css" rel="stylesheet">
-  <link href="./css/navbar.css" rel="stylesheet">
-  <link href="./css/footer.css" rel="stylesheet">
+  <link href="./css/nav.css" rel="stylesheet">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <!-- my style sheets -->
@@ -24,7 +23,6 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152513593-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -61,117 +59,51 @@
 
 <body>
 <nav class="nav-bar-nav">
-  <div class="nav-left-home">
-    <ul class="nav-bar-list">
-      <li class="nav-bar-link" id="nav-bar-link-name"><a href="index.html">Anikait</a></li>
-    </ul>
-  </div>
-  <div class="nav-right-home">
-    <ul class="nav-bar-list">
-      <li class="nav-bar-link"><a href="index.html">Projects</a></li>
-      <li class="nav-bar-link"><a href="about.html">About</a></li>
-      <li class="nav-bar-link"><a target="_blank" href="resume.pdf">Resume</a></li>
-    </ul>
-  </div>
+    <div class="nav-right-home">
+        <ul class="nav-bar-list">
+        <li class="nav-bar-link"><a href="index.html">About Me</a></li>
+        <li class="nav-bar-link"><a href="work.html">Portfolio</a></li>
+        </ul>
+    </div>
 </nav>
-
 <!-- about me lil intro -->
-
-  <div class="container-fluid main-body">
+  <div class="container-fluid ">
     <div class="intro-wrapper">
-      
-      <div class="description-main">
-      <h1 class="index-heading"><span id="hello-culture">Hello!</span> My name is <span style="color: lightpink;" class="my-name">Anikait</span></h1>
-      <p class="index-description">I’m a software engineer studying Computer Science @ <a href="http://tamu.edu" style="color:maroon;" target="_blank">Texas A&M University</a>. <br>Currently I am a research assistant at the <a href="https://avfl.engr.tamu.edu/" target="_blank" style="color: olive;">Advanced Vertical Flight Lab</a>. I previously worked at
-        <a href="http://bungeetech.com" style="color:orange;" target="_blank"> Bungee Tech</a> and <a href="https://astrocenter.tamu.edu/" target="_blank" style="color: navy;">TAMU astrolab</a>.</p>
-      <p class="index-sub-description">Come poke your nose into my life!</p>
-        <div class="links-wrapper">
-          <a href="mailto:anikaitsharma@yahoo.com"><i class="fa fa-envelope fa-2x" aria-hidden="true" id="icon-transform"></i></a>
-          <a href="https://www.linkedin.com/in/anikait/" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true" id="icon-transform"></i></a>
-          <a href="https://github.com/anikait627" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true" id="icon-transform"></i></a>
+      <div class="main-body">
+        <h1 class="heading"><span id="hello-culture">Hello!</span> My name is <span class="my-name">Anikait</span></h1>
+        <div class="">
+          <p class="description">I’m a student @ <a href="http://tamu.edu" style="color:maroon;" target="_blank">Texas A&M University</a> studying Computer Science + Applied mathematics. I'm a full-stack developer with a passion for software engineering.</p>
+          <p class="description">Currently I am a research assistant at the <a href="https://avfl.engr.tamu.edu/" target="_blank" style="color: olive;">Advanced Vertical Flight Lab</a>. I previously worked at
+          <a href="http://bungeetech.com" style="color:orange;" target="_blank"> Bungee Tech</a> and <a href="https://astrocenter.tamu.edu/" target="_blank" style="color: navy;">TAMU astrolab</a>.</p>
+          <p class="description">I initially came into <a href="http://tamu.edu" style="color:maroon;" target="_blank">TAMU</a> as an aerospace engineer. However, I quickly came across the endless possibilities the future of computer science holds. I immediately shifted career paths, and since then I have never looked back. I am experienced with full-stack development. However, I am exploring the fields of machine learning, nlp, and computer graphics.</p>
+          <p class="description">
+            When I'm not coding - I'm probably <span style="color:Navy">climbing some rocks</span> 🧗🏾‍,
+          <span style="color:yellowgreen">cooking some grub </span> 🍾, 
+          or <span style="color:Coral">concert hopping</span> with my
+          <span style="color:palevioletred"> homies</span> 🐙</span>
+          </p>
+      </div>
+        <p>Feel free to get in touch with me!</p>
+        <div class="links">
+          <a href="mailto:anikaitsharma@yahoo.com" class="icon-marg"><i class="fa fa-envelope fa-2x" aria-hidden="true" id="icon-transform"></i></a>
+          <a href="https://www.linkedin.com/in/anikait/" target="_blank" class="icon-marg"><i class="fa fa-linkedin fa-2x" aria-hidden="true" id="icon-transform"></i></a>
+          <a href="https://github.com/anikait627" target="_blank" class="icon-marg"><i class="fa fa-github fa-2x" aria-hidden="true" id="icon-transform"></i></a>
+          <a href="resume.pdf" target="_blank" class="icon-marg"><i class="fa fa-file fa-2x" aria-hidden="true" id="icon-transform"></i></a>
         </div>
+
       </div>
     </div>
 
-
-    <!-- begining of projects -->
-
-      <div class="project-wrapper" id="design-section-container">
-
-        <h1 class="section-heading" id="work-tab-scroll">Projects</h1>
-              <!--  Fullhouse-->
-               <div onclick="location.href='/fullhouse';" class="row design-row" id="fullhouse-readme">
-                 <div class="col-md-6 project-image-container">
-                   <img class="img-responsive project-image" src="img/fullhouse_dashboard.png" alt="" id="fullhouse-pic">
-                 </div>
-
-                 <div class="col-md-6">
-                   <div class="project-information">
-                     <h3 class="design-date">2019 • Full House • HackTX</h3>
-                     <h1 class="design-title">HackTX PwC Challenge Winner!</h1>
-                     <h1 class="design-description">Communal Inventory Management for Social Service Centers designed to reduce waste and give each community their specific needs.</h1>
-                     <button type="button" href="/fullhouse" id="project-button">Check it out <i style="color: white;" class="fa fa-arrow-right fa-1x" aria-hidden="true"></i></button>
-                    </div>
-                 </div>
-               </div>
-
-               <!-- datathon -->
-               <div onclick="window.location.href='https://github.com/anikait627/TAMUdatathon' " class="row design-row" id="datathon-readme" target="_blank">
-                <div class="col-md-6 project-image-container">
-                  <img class="img-responsive project-image" src="img/conoco.png" alt="" id="cononco-picture">
-                </div>
-
-                <div class="col-md-6">
-                  <div class="project-information">
-                    <h3 class="design-date">2019 • Conoco Phillips • TAMUdatathon</h3>
-                    <h1 class="design-title" style="font-size: 15px;">TAMUdatathon Conoco Phillips Challenge</h1>
-                    <h1 class="design-description">Trained model to predict oil rig failure with ConocoPhilips sensor data. Obtained 99.2% success rate for failure detection predictor for rig data using random forest model.</h1>
-                    <button type="button" href="https://github.com/anikait627/TAMUdatathon" id="project-button" target="_blank">Check it out <i style="color: white;" class="fa fa-arrow-right fa-1x" aria-hidden="true"></i></button>
-                   </div>
-                </div>
-              </div>
-
-              <!-- LSPACE academy -->
-              <div onclick="location.href='PDR.pdf';" class="row design-row" id="lspace-readme" target="_blank">
-                <div class="col-md-6 project-image-container">
-                  <img class="img-responsive project-image" src="img/trojans.gif" alt="" id="lspace-pic">
-                </div>
-
-                <div class="col-md-6">
-                  <div class="project-information">
-                    <h3 class="design-date">2019 • L’Space PDR • NASA</h3>
-                    <h1 class="design-title" style="font-size: 20px;">Project Manager ~ NASA L’SPACE</h1>
-                    <h1 class="design-description">Scripted models, charts, and simulations of the possible flight plan for the Lucy
-                      rovers using python. Wrote a preliminary design report based on the models and research developed for the Lucy Space Mission. </h1>
-                    <button type="button" href="PDR.pdf" id="project-button">Check it out <i style="color: white;" class="fa fa-arrow-right fa-1x" aria-hidden="true" target="_blank"></i></button>
-                   </div>
-                </div>
-              </div>
-      </div>
-
-
       <!-- footer -->
-
       <div class="contact-footer">
-        <h1 class="footer-header">Get in touch with me!</h1>
-
         <div class="footer-description">
-          <h3 style="display: inline; font-size: 16px; font-weight: 400;">I don't bite </h3>
-          <div style="display: inline;"><i class="fa fa-heart fa-1x" aria-hidden="true" id="heart-beat" onclick="darkLight()"></i></div>
+          <h3 style="display: inline; font-size: 16px; font-weight: 400;">Made with </h3>
+          <span style="display: inline;"><i class="fa fa-heart fa-1x" aria-hidden="true" id="heart-beat" onclick="darkLight()"></i></span>
         </div>
-
-          <p class="footer-links">
-          <a href="mailto:anikaitsharma@yahoo.com"><i class="fa fa-envelope fa-2x" aria-hidden="true" id="icon-transform"></i></a>
-          <a href="https://www.linkedin.com/in/anikait/" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true" id="icon-transform"></i></a> 
-          <a href="https://facebook.com/anikait627" target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true" id="icon-transform"></i></a>
-          <a href="https://instagram.com/anikait627" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true" id="icon-transform"></i></a>
-          <a href="https://open.spotify.com/user/anikait627?si=D8bditPARhim9N6o0xebEQ" target="_blank"><i class="fa fa-spotify fa-2x" aria-hidden="true" id="icon-transform"></i></a>
-        </p>
-
       </div>
-
 
   </div>
+  
   <script src="./script.js"></script>
 </body>
 </html>

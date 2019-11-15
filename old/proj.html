@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="img/me.png">
+  <link href="https://fonts.googleapis.com/css?family=DM+Sans:400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+  <title>Anikait Sharma</title>
+
+  <!-- external style sheets -->
+  <link href="./css/newstyle.css" rel="stylesheet">
+  <link href="./css/navbar.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- my style sheets -->
+
+  <!-- external scripts  -->
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152513593-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-152513593-1');
+  </script>
+
+</head>
+
+<body>
+<nav class="nav-bar-nav">
+  <div class="nav-right-home">
+    <ul class="nav-bar-list">
+      <li class="nav-bar-link"><a href="change.html">About Me</a></li>
+      <li class="nav-bar-link"><a href="proj.html">Projects</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- about me lil intro -->
+  <div class="container-fluid ">      
+        <div class="project-wrapper">
+
+            <h1 class="project-heading" id="work-tab-scroll">Projects</h1>
+                  <!--  Fullhouse-->
+                   <div onclick="location.href='/fullhouse';" class="row design-row" id="fullhouse-readme">
+                     <div class="col-md-6 project-image-container">
+                       <img class="img-responsive project-image" src="img/fullhouse_dashboard.png" alt="" id="fullhouse-pic">
+                     </div>
+    
+                     <div class="col-md-6">
+                       <div class="project-information">
+                         <h3 class="design-date">2019 • Full House • HackTX</h3>
+                         <h1 class="design-title">HackTX PwC Challenge Winner!</h1>
+                         <h1 class="design-description">Communal Inventory Management for Social Service Centers designed to reduce waste and give each community their specific needs.</h1>
+                         <button type="button" href="/fullhouse" id="project-button">Check it out <i style="color: white;" class="fa fa-arrow-right fa-1x" aria-hidden="true"></i></button>
+                        </div>
+                     </div>
+                   </div>
+    
+                   <!-- datathon -->
+                   <div onclick="window.location.href='https://github.com/anikait627/TAMUdatathon' " class="row design-row" id="datathon-readme" target="_blank">
+                    <div class="col-md-6 project-image-container">
+                      <img class="img-responsive project-image" src="img/conoco.png" alt="" id="cononco-picture">
+                    </div>
+    
+                    <div class="col-md-6">
+                      <div class="project-information">
+                        <h3 class="design-date">2019 • Conoco Phillips • TAMUdatathon</h3>
+                        <h1 class="design-title" style="font-size: 15px;">TAMUdatathon Conoco Phillips Challenge</h1>
+                        <h1 class="design-description">Trained model to predict oil rig failure with ConocoPhilips sensor data. Obtained 99.2% success rate for failure detection predictor for rig data using random forest model.</h1>
+                        <button type="button" href="https://github.com/anikait627/TAMUdatathon" id="project-button" target="_blank">Check it out <i style="color: white;" class="fa fa-arrow-right fa-1x" aria-hidden="true"></i></button>
+                       </div>
+                    </div>
+                  </div>
+    
+                  <!-- LSPACE academy -->
+                  <div onclick="location.href='PDR.pdf';" class="row design-row" id="lspace-readme" target="_blank">
+                    <div class="col-md-6 project-image-container">
+                      <img class="img-responsive project-image" src="img/trojans.gif" alt="" id="lspace-pic">
+                    </div>
+    
+                    <div class="col-md-6">
+                      <div class="project-information">
+                        <h3 class="design-date">2019 • L’Space PDR • NASA</h3>
+                        <h1 class="design-title" style="font-size: 20px;">Project Manager ~ NASA L’SPACE</h1>
+                        <h1 class="design-description">Scripted models, charts, and simulations of the possible flight plan for the Lucy
+                          rovers using python. Wrote a preliminary design report based on the models and research developed for the Lucy Space Mission. </h1>
+                        <button type="button" href="PDR.pdf" id="project-button">Check it out <i style="color: white;" class="fa fa-arrow-right fa-1x" aria-hidden="true" target="_blank"></i></button>
+                       </div>
+                    </div>
+                  </div>
+          </div>
+
+      <!-- footer -->
+
+      <div class="contact-footer">
+
+        <div class="footer-description">
+          <h3 style="display: inline; font-size: 16px; font-weight: 400;">Made with </h3>
+          <span style="display: inline;"><i class="fa fa-heart fa-1x" aria-hidden="true" id="heart-beat" onclick="darkLight()"></i></span>
+        </div>
+      </div>
+
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
