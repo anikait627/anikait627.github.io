@@ -85,3 +85,16 @@ text-decoration: underline;
 color: inherit;
 outline: none;
 }
+#project-button{
+    background-color: steelblue;
+    color: white;
+    /* padding: 15px 32px; */
+    text-align: center;
+    font-size: 13px;
+    border-radius: 12px;
+  }
+  
+  #project-button:hover{
+    background-color: lightpink;
+    border-color: white;
+  }
