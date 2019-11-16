@@ -3,9 +3,8 @@
     padding: 0 100px; 
     position: fixed;
     z-index: 1;
-    background-color: transparent;
+    background-color: inherit;
     width: 100%;
-    transition:500ms ease;
   }
   .nav-bar-list {
     display: inline-block;
