@@ -77,7 +77,8 @@
         display: initial;
     }
     .personal-info{
-        position: relative;
+        padding-top: 50px;
+        position: initial;
     }
 }
 a:hover, a:active, a:focus {
