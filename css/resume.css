@@ -80,6 +80,16 @@
         padding-top: 50px;
         position: initial;
     }
+    .all-work-container{
+        width: auto;
+    }
+    .proj-title{
+        font-size: medium;
+        margin-left: 10px;
+    }
+    .title{
+        margin-left: 5px;
+    }
 }
 a:hover, a:active, a:focus {
 text-decoration: underline;
