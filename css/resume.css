@@ -101,8 +101,8 @@ outline: none;
     color: white;
     /* padding: 15px 32px; */
     text-align: center;
-    font-size: 13px;
-    border-radius: 12px;
+    font-size: 14px;
+    border-radius: 5px;
   }
   
   #project-button:hover{
