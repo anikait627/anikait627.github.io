@@ -3,6 +3,9 @@
     padding-top: 50px;
     display: flex;
 }
+/* .description-container, .skill-container{
+    font-family: "Inconsolata", monospace;
+} */
 /* side margin */
 .personal-info{
     margin-left: 50px;
@@ -109,4 +112,13 @@ outline: none;
   #project-button:hover{
     background-color: lightpink;
     border-color: white;
+  }
+
+  #icon-transform{
+    transition: transform 0.5s;
+  }
+
+  #icon-transform:hover{
+    transform: scale(1.25);
+    color: #3581B8;
   }
