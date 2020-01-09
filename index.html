@@ -38,21 +38,42 @@
 
 		<script type="text/javascript">
 			let arr =['Hola! ', 
-						'Aloha! ','여보세요! ',
-						'नमस्ते! ','こんにちは! ',
-						'你好! ', 'Bonjour! ',
-						'Привет! ','ਹੈਲੋ!',
-						'Talofa! ', 'Salut! ',
-						'ஹலோ!','Γεια σας!',
-						'Ciao!','สวัสดี!',
-						'Guten Tag!', 'Shalom!',
-						'ሰላም!','გამარჯობა!',
-						'γεια σας!','ສະບາຍດີ!',
-						'سلام!', 'שלום!',
-						'Здраво!','Hej!']
-			setInterval(function() {
-				document.getElementById("hello-culture").innerText = arr[Math.floor(Math.random()*arr.length)];
-			}, 2000)
+            'Aloha! ','여보세요! ',
+            'नमस्ते! ','こんにちは! ',
+            '你好! ', 'Bonjour! ',
+            'Привет! ','ਹੈਲੋ!',
+            'Talofa! ', 'Salut! ',
+            'ஹலோ!','Γεια σας!',
+            'Ciao!','สวัสดี!',
+            'Guten Tag!', 'Shalom!',
+            'ሰላም!','გამარჯობა!',
+            'γεια σας!','Hello!',
+            'سلام!', 'שלום!',
+            'Здраво!','Hej!']
+			const sleepAwait = async (amount) => {
+				return new Promise((res, rej) => {
+					setTimeout(() => {
+						res()
+					}, amount)
+				})
+			}
+			document.addEventListener("DOMContentLoaded", function() {
+				(async () => {
+					let hi = "Hi!";
+					while (true) {
+						for (let i=0; i<hi.length; i++) {
+							document.getElementById("hello-culture").innerText = hi.substring(0,i+1);
+							await sleepAwait(64);
+						}
+						await sleepAwait(2500)
+						for (let i=hi.length; i>=0; i--) {
+							document.getElementById("hello-culture").innerText = hi.substring(0,i+1);
+							await sleepAwait(64);
+						}
+						hi = arr[Math.floor(Math.random()*arr.length)];
+					}
+				})()
+			})
 			
 		</script>
 
@@ -65,7 +86,7 @@
 				<!-- One -->
 					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
-							<h2><span id="hello-culture">Hello!</span> My name is Anikait</h2>
+							<h2><span id="hello-culture">Hi!</span> My name is Anikait</h2>
 							<div class="">
 								<p class="major">I’m a student @ <a href="http://tamu.edu" class="work" style="color:maroon;" target="_blank">Texas A&M University</a> studying Computer Science + Applied mathematics.</p>
 								<p class="major">Currently I'm a Software Developer at <a href="https://nepris.com" class="work" target="_blank" style="color:#18ba9b">Nepris Inc.</a> and a research assistant at the <a class="work" href="https://avfl.engr.tamu.edu/" target="_blank" style="color: olive;">Advanced Vertical Flight Lab</a>. I previously worked at
@@ -87,7 +108,7 @@
 								</ul>
 							</div>
 							<ul class="actions stacked">
-								<li><a href="#first" class="button small wide smooth-scroll-middle">Poke Your Nose Into My Life</a></li>
+								<li><a href="#first" class="button small wide smooth-scroll-middle">Check Out My Portfolio!</a></li>
 							</ul>
 						</div>
 						<div class="image main-pic">
@@ -126,7 +147,7 @@
 								<br><p class="tools">Tools: JavaScript, Node.js, Puppeteer, Linux, Figma, Mustache, Kibana</p>
 							</ul>
 						</div>
-						<div class="image">
+						<div class="image" style="background-color: white !important;">
 							<img src="images/bungee3.png" alt="" />
 						</div>
 					</section>
@@ -142,7 +163,7 @@
 								<br><p class="tools">Tools: Python, Jupyter Notebook, OpenCV, matlab</p>
 							</ul>
 						</div>
-						<div class="image avfl-pic">
+						<div class="image avfl-pic" style="background-color: white !important;">
 							<img src="images/avfl.png " alt="" />
 						</div>
 					</section>
@@ -156,7 +177,7 @@
 								<br><p class="tools">Tools: Unreal Engine 4, C++</p>
 							</ul>
 						</div>
-						<div class="image small">
+						<div class="image small" style="background-color: white !important;">
 							<img src="images/astro.jpg" alt="" />
 						</div>
 					</section>
@@ -167,64 +188,63 @@
 							<h2>Personal Projects</h2>
 							<p>Some Cool things I've Worked On :~)</p>
 						</div>
+					</section>
+					
+					<!-- projects card -->
+					<!-- fullhouse -->
+					<section class="spotlight style1 orient-left content-align-left image-position-left	 onscroll-image-fade-in">
+						<div class="content">
+							<h3>Full House ~ <a class="work" href="/fullhouse" target="_blank" style="color:#80ced7">HackTX PWC Challenge Winner!</a> — 2019</h3>		
+							<ul>
+								<li>Help shelters manage their inventory by determining scarcity or surplus</li>
+								<li>connect shelters with others that may have the supplies that they need</li>
+								<li>Full House accomplishes this with a search tool that lets users easily query the inventory, and with a dashboard that recommends other shelters</li>
+								<br><p class="tools">Tools: React, Node.js, Express, Python, Beautifulsoup</p>
+							</ul>
+							<ul class="actions stacked">
+								<li><a href="/fullhouse" class="button small wide smooth-scroll-middle">Check it out</a></li>
+							</ul>
+						</div>
+						<div class="image" style="background-color:#92e3e9">
+							<img src="images/fullhouse_dashboard.png" alt="" />
+						</div>
+					</section>
 
-						<!-- projects card -->
-						<!-- fullhouse -->
-						<section class="spotlight style1 orient-left content-align-left image-position-left	 onscroll-image-fade-in">
-							<div class="content">
-								<h3>Full House ~ <a class="work" href="/fullhouse" target="_blank" style="color:lightblue">HackTX PWC Challenge Winner!</a> — 2019</h3>		
-								<ul>
-									<li>Help shelters manage their inventory by determining scarcity or surplus</li>
-									<li>connect shelters with others that may have the supplies that they need</li>
-									<li>Full House accomplishes this with a search tool that lets users easily query the inventory, and with a dashboard that recommends other shelters</li>
-									<br><p class="tools">Tools: React, Node.js, Express, Python, Beautifulsoup</p>
-								</ul>
-								<ul class="actions stacked">
-									<li><a href="/fullhouse" class="button small wide smooth-scroll-middle">Check it out</a></li>
-								</ul>
-							</div>
-							<div class="image">
-								<img src="images/fullhouse_dashboard.png" alt="" />
-							</div>
-						</section>
+					<!-- projects card -->
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+						<div class="content">
+							<h3>Conoco Phillips ML model</span> ~ <a class="work" href="https://github.com/anikait627/TAMUdatathon" target="_blank" style="color:#202020">TAMUdatathon</a> — 2019</h3>
+							<ul>	
+								<li>Trained model to predict oil rig failure with ConocoPhilips sensor data</li>
+								<li>Obtained 99.2% success rate for failure detection predictor for rig data using random forest model.</li>
+								<br><p class="tools">Tools: Python, Jupyter Notebook, Pandas, Numpy, Random Forest</p>
+							</ul>
+							<ul class="actions stacked">
+								<li><a href="https://github.com/anikait627/TAMUdatathon" class="button small wide smooth-scroll-middle">Check it out</a></li>
+							</ul>
+						</div>
+						<div class="image conoco-pic">
+							<img class="" src="images/conoco.png" alt="" />
+						</div>
+					</section>
 
-						<!-- projects card -->
-						<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
-							<div class="content">
-								<h3>Conoco Phillips ML model</span> ~ <a class="work" href="https://github.com/anikait627/TAMUdatathon" target="_blank" style="color:#202020">TAMUdatathon</a> — 2019</h3>
-								<ul>	
-									<li>Trained model to predict oil rig failure with ConocoPhilips sensor data</li>
-									<li>Obtained 99.2% success rate for failure detection predictor for rig data using random forest model.</li>
-									<br><p class="tools">Tools: Python, Jupyter Notebook, Pandas, Numpy, Random Forest</p>
-								</ul>
-								<ul class="actions stacked">
-									<li><a href="https://github.com/anikait627/TAMUdatathon" class="button small wide smooth-scroll-middle">Check it out</a></li>
-								</ul>
-							</div>
-							<div class="image conoco-pic">
-								<img class="" src="images/conoco.png" alt="" />
-							</div>
-						</section>
-
-						<!-- projects card -->
-						<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
-							<div class="content">
-								<h4>Project Manager</span> ~ <a class="work" href="https://lspace.asu.edu" target="_blank" style="color:navy">NASA L’SPACE Academy</a> — Jan 2019 - May 2019</h4>
-								<ul>	
-									<li>Worked with the engineering team on the selection, design, and verification of a mechanical descent by reviewing system functional requirements and developing simulation models</li>
-									<li>Scripted models, charts, and simulations of the possible flight plan for the Lucy rovers using python</li>
-									<li>Wrote and presented a preliminary design report based on the models and research developed for the Lucy Space Mission</li>
-									<br><p class="tools">Tools: Python, Numpy, Pandas, Matplotlob, CAD, Solidworks</p>
-								</ul>
-								<ul class="actions stacked">
-									<li><a href="/PDR.pdf" class="button small wide smooth-scroll-middle">Read the PDR</a></li>
-								</ul>
-							</div>
-							<div class="image nasa-pic">
-								<img src="images/trojans.gif" alt="" />
-							</div>
-						</section>
-
+					<!-- projects card -->
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+						<div class="content">
+							<h4>Project Manager</span> ~ <a class="work" href="https://lspace.asu.edu" target="_blank" style="color:navy">NASA L’SPACE Academy</a> — Jan 2019 - May 2019</h4>
+							<ul>	
+								<li>Worked with the engineering team on the selection, design, and verification of a mechanical descent by reviewing system functional requirements and developing simulation models</li>
+								<li>Scripted models, charts, and simulations of the possible flight plan for the Lucy rovers using python</li>
+								<li>Wrote and presented a preliminary design report based on the models and research developed for the Lucy Space Mission</li>
+								<br><p class="tools">Tools: Python, Numpy, Pandas, Matplotlob, CAD, Solidworks</p>
+							</ul>
+							<ul class="actions stacked">
+								<li><a href="/PDR.pdf" class="button small wide smooth-scroll-middle">Read the PDR</a></li>
+							</ul>
+						</div>
+						<div class="image nasa-pic">
+							<img src="images/trojans.gif" alt="" />
+						</div>
 					</section>
 				<!-- Footer -->
 					<footer class="wrapper style1 align-center">

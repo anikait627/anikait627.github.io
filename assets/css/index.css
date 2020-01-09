@@ -1,3 +1,6 @@
+/* * {
+  background-color: white !important;
+} */
 .nepris-pic {
     background: linear-gradient(45deg, #ab7aad, #f7808b);
 }
@@ -82,6 +85,14 @@
   padding: 50px !important;
   background-color: white !important;
 }
+
+@media screen and (orientation: portrait) {
+  .main-pic {
+    padding: 0px !important
+  }
+}
 .main-pic img {
   position: relative !important;
+  object-fit: contain !important;
+  object-position: center !important;
 }
