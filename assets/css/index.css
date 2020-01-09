@@ -78,3 +78,10 @@
   #heart-beat{
     animation: heartBeat 2s infinite;
   }
+.main-pic {
+  padding: 50px !important;
+  background-color: white !important;
+}
+.main-pic img {
+  position: relative !important;
+}
