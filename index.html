@@ -1,116 +1,261 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+		<meta property="og:title" content="Anikait Sharma">
+		<meta property="og:site_name" content="Anikait">
+		<meta property="og:url" content="anikaitsharma.com">
+		<meta property="og:description" content="Hi! I'm Anikait Sharma.">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Anikait's Portfolio">
+		<meta name="author" content="Anikait Sharma">
+		<link rel="icon" href="images/me.png">
+		<link href="https://fonts.googleapis.com/css?family=DM+Sans:400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+		
+		<title>Anikait Sharma</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="assets/css/index.css"/>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-152513593-1"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
 
-<head>
-  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-  <meta property="og:title" content="Anikait Sharma">
-  <meta property="og:site_name" content="Anikait">
-  <meta property="og:url" content="anikaitsharma.com">
-  <meta property="og:description" content="Hi! I'm Anikait Sharma.">
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Anikait's Portfolio">
-  <meta name="author" content="Anikait Sharma">
-  <link rel="icon" href="img/me.png">
-  <link href="https://fonts.googleapis.com/css?family=DM+Sans:400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
-  <title>Anikait Sharma</title>
-
-  <!-- external style sheets -->
-  <link href="./css/style.css" rel="stylesheet">
-  <link href="./css/nav.css" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <!-- my style sheets -->
-
-  <!-- external scripts  -->
-  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-152513593-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-152513593-1');
-</script>
+		gtag('config', 'UA-152513593-1');
+		</script>
 
 
-  <script type="text/javascript">
-    $(window).scroll(function(){
-      $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
-    });
-    $(function(){
-      let arr =['Hola! ', 
-                'Aloha! ','여보세요! ',
-                'नमस्ते! ','こんにちは! ',
-                '你好! ', 'Bonjour! ',
-                'Привет! ','ਹੈਲੋ!',
-                'Talofa! ', 'Salut! ',
-                'ஹலோ!','Γεια σας!',
-                'Ciao!','สวัสดี!',
-                'Guten Tag!', 'Shalom!',
-                'ሰላም!','გამარჯობა!',
-                'γεια σας!','ສະບາຍດີ!',
-                'سلام!', 'שלום!',
-                'Здраво!','Hej!']
-      setInterval(function() {
-        $("#hello-culture").text(arr[Math.floor(Math.random()*arr.length)])
-      }, 2000)
-    })
-  </script>
+		<script type="text/javascript">
+			let arr =['Hola! ', 
+						'Aloha! ','여보세요! ',
+						'नमस्ते! ','こんにちは! ',
+						'你好! ', 'Bonjour! ',
+						'Привет! ','ਹੈਲੋ!',
+						'Talofa! ', 'Salut! ',
+						'ஹலோ!','Γεια σας!',
+						'Ciao!','สวัสดี!',
+						'Guten Tag!', 'Shalom!',
+						'ሰላም!','გამარჯობა!',
+						'γεια σας!','ສະບາຍດີ!',
+						'سلام!', 'שלום!',
+						'Здраво!','Hej!']
+			setInterval(function() {
+				document.getElementById("hello-culture").innerText = arr[Math.floor(Math.random()*arr.length)];
+			}, 2000)
+			
+		</script>
 
-</head>
+	</head>
+	<body class="is-preload">
 
-<body>
-<nav class="nav-bar-nav">
-    <div class="nav-right-home">
-        <ul class="nav-bar-list">
-        <li class="nav-bar-link"><a href="index.html">About Me</a></li>
-        <li class="nav-bar-link"><a href="work.html">Portfolio</a></li>
-        </ul>
-    </div>
-</nav>
-<!-- about me lil intro -->
-  <div class="container-fluid ">
-    <div class="intro-wrapper">
-      <div class="main-body">
-        <h1 class="heading"><span id="hello-culture">Hello!</span> My name is <span class="my-name">Anikait</span></h1>
-        <div class="">
-          <p class="description">I’m a student @ <a href="http://tamu.edu" style="color:maroon;" target="_blank">Texas A&M University</a> studying Computer Science + Applied mathematics. I'm a full-stack developer with a passion for software engineering.</p>
-          <p class="description">Currently I am a research assistant at the <a href="https://avfl.engr.tamu.edu/" target="_blank" style="color: olive;">Advanced Vertical Flight Lab</a>. I previously worked at
-          <a href="http://bungeetech.com" style="color:orange;" target="_blank"> Bungee Tech</a> and <a href="https://astrocenter.tamu.edu/" target="_blank" style="color: navy;">TAMU astrolab</a>.</p>
-          <p class="description">I initially came into <a href="http://tamu.edu" style="color:maroon;" target="_blank">TAMU</a> as an aerospace engineer. However, I quickly came across the endless possibilities the future of computer science holds. I immediately shifted career paths, and since then I have never looked back. I am experienced with full-stack development. However, I am exploring the fields of machine learning, nlp, and computer graphics.</p>
-          <p class="description">
-            When I'm not coding - I'm probably <span style="color:Navy">climbing some rocks</span> 🧗🏾‍,
-          <span style="color:yellowgreen">cooking some grub </span> 🍾, 
-          or <span style="color:Coral">concert hopping</span> with my
-          <span style="color:palevioletred"> homies</span> 🐙</span>
-          </p>
-      </div>
-        <p>Feel free to get in touch with me!</p>
-        <div class="links">
-          <a href="mailto:anikaitsharma@yahoo.com" class="icon-marg"><i class="fa fa-envelope fa-2x" aria-hidden="true" id="icon-transform"></i></a>
-          <a href="https://www.linkedin.com/in/anikait/" target="_blank" class="icon-marg"><i class="fa fa-linkedin fa-2x" aria-hidden="true" id="icon-transform"></i></a>
-          <a href="https://github.com/anikait627" target="_blank" class="icon-marg"><i class="fa fa-github fa-2x" aria-hidden="true" id="icon-transform"></i></a>
-          <a href="resume.pdf" target="_blank" class="icon-marg"><i class="fa fa-file fa-2x" aria-hidden="true" id="icon-transform"></i></a>
-        </div>
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
 
-      </div>
-    </div>
+				<!-- One -->
+					<section class="banner style4 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+						<div class="content">
+							<h2><span id="hello-culture">Hello!</span> My name is Anikait</h2>
+							<div class="">
+								<p class="major">I’m a student @ <a href="http://tamu.edu" class="work" style="color:maroon;" target="_blank">Texas A&M University</a> studying Computer Science + Applied mathematics.</p>
+								<p class="major">Currently I'm a Software Developer at <a href="https://nepris.com" class="work" target="_blank" style="color:#18ba9b">Nepris Inc.</a> and a research assistant at the <a class="work" href="https://avfl.engr.tamu.edu/" target="_blank" style="color: olive;">Advanced Vertical Flight Lab</a>. I previously worked at
+								<a href="http://bungeetech.com" class="work" style="color:orange;" target="_blank"> Bungee Tech</a> and <a href="https://astrocenter.tamu.edu/" class="work" target="_blank" style="color: navy;">TAMU astrolab</a>.</p>
+								<!-- <p class="major">I initially came into <a href="http://tamu.edu" style="color:maroon;" target="_blank">TAMU</a> as an aerospace engineer. However, I quickly came across the endless possibilities the future of computer science holds. I immediately shifted career paths, and since then I have never looked back. I am experienced with full-stack development. However, I am exploring the fields of machine learning, nlp, and computer graphics.</p> -->
+								<p class="major">When I'm not coding - I'm probably <span style="color:Navy">climbing some rocks</span> 🧗🏾‍,
+								<span style="color:yellowgreen">cooking some grub </span> 🍾, 
+								or <span style="color:Coral">concert hopping</span> with my
+								<span style="color:palevioletred"> homies</span> 🐙</span>
+								</p>
+							</div>
+							<div class="inner">
+								<ul class="icons">
+									<li><a href="resume.pdf" class="icon solid style2 fa-file-alt icon-color"><span class="label">Resume</span></a></li>
+									<!-- <li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li> -->
+									<li><a href="https://github.com/anikait627" class="icon brands style2 fa-github icon-color"><span class="label">Github</span></a></li>
+									<li><a href="https://www.linkedin.com/in/anikait/" class="icon brands style2 fa-linkedin-in icon-color"><span class="label">LinkedIn</span></a></li>
+									<li><a href="mailto:anikaitsharma@yahoo.com" class="icon style2 fa-envelope icon-color"><span class="label">Email</span></a></li>
+								</ul>
+							</div>
+							<ul class="actions stacked">
+								<li><a href="#first" class="button small wide smooth-scroll-middle">Poke Your Nose Into My Life</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/mt.jpeg" alt="" />
+						</div>
+					</section>
 
-      <!-- footer -->
-      <div class="contact-footer">
-        <div class="footer-description">
-          <h3 style="display: inline; font-size: 16px; font-weight: 400;">Made with </h3>
-          <span style="display: inline;"><i class="fa fa-heart fa-1x" aria-hidden="true" id="heart-beat" onclick="darkLight()"></i></span>
-        </div>
-      </div>
+				<!-- Two -->
+					<section class="wrapper style1 align-center">
+						<div class="inner">
+							<h2 id="">Experience</h2>
+						</div>
+					</section>
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+						<div class="content">
+							<h3>Software Developer Intern @ <a class="work" href="https://nepris.com" target="_blank" style="color:#18ba9b">Nepris Inc.</a>  ~ Dec. 2019 - Present</h3>
+							<ul class="description-container">
+								<li>Developed a React based single page app which allows operators to manage business logic</li>
+								<li>Setup a CI/CD Workflow using Azure DevOps</li>
+								<br><p class="tools">Tools: React.js, C#, .Net Core</p>
+							</ul>
+						</div>
+						<div class="image nepris-pic">
+							<img src="images/nepris.svg" alt="" />
+						</div>
+					</section>
 
-  </div>
-  
-  <script src="./script.js"></script>
-</body>
+				<!-- Three -->
+					<section class="spotlight style5 orient-center content-align-left image-position-center onscroll-image-fade-in">
+						<div class="content">
+							<h4>Software Engineering Intern @ <a class="work" href="https://bungeetech.com" target="_blank" style="color:orange">Bungee Tech</a>  ~ Jun. 2019 - Aug. 2019</h4>
+							<ul class="description-container">
+								<li>Developed web-crawling scripts to scrape data such as price, customer review, product title, brand, and more - using puppeteer in Node.js</li>
+								<li>Set up linux servers using centOS to rotate thousands of IP addresses globally for web-crawling scripts </li>
+								<li>Constructed parts of the company webpage using js/html/css/mustache and designed in Figma</li>
+								<br><p class="tools">Tools: JavaScript, Node.js, Puppeteer, Linux, Figma, Mustache, Kibana</p>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/bungee3.png" alt="" />
+						</div>
+					</section>
+
+				<!-- Four -->
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+						<div class="content">
+							<h4>Undergraduate Research Assistant</span> @ <a class="work" href="https://avfl.engr.tamu.edu/" target="_blank" style="color:olive">Advanced Vertical Flight Lab</a> ~ Aug 2019 - Present</h4>
+							<ul class="description-container"></li>
+								<li>Developing shipboard VTOL UAV autonomous landing system. </li>
+								<li>Developed image detection scripts in python using openCV to track specified objects</li>
+								<li>Built multiloop controller for the UAV using matlab</li>
+								<br><p class="tools">Tools: Python, Jupyter Notebook, OpenCV, matlab</p>
+							</ul>
+						</div>
+						<div class="image avfl-pic">
+							<img src="images/avfl.png " alt="" />
+						</div>
+					</section>
+					<!-- final research section -->
+					<section class="spotlight style2 orient-right content-align-left image-position-center onscroll-image-fade-in">
+						<div class="content">
+							<h3>Research Technician @ <a class="work" href="https://astrocenter.tamu.edu/" target="_blank" style="color:navy">TAMU spaceCRAFT</a>  ~ Jan 2019 - Aug 2019</h3>
+							<ul class="description-container">
+								<li>Created a virtual reality tool for large-scale engineering system design, integration, and collaboration </li>
+								<li>Designed and built a software platform for real-time collaborative systems engineering and scenario-based Virtual Reality simulation using UE4 </li>
+								<br><p class="tools">Tools: Unreal Engine 4, C++</p>
+							</ul>
+						</div>
+						<div class="image small">
+							<img src="images/astro.jpg" alt="" />
+						</div>
+					</section>
+
+				<!-- Projects -->
+					<section class="wrapper style1 align-center">
+						<div class="inner">
+							<h2>Personal Projects</h2>
+							<p>Some Cool things I've Worked On :~)</p>
+						</div>
+
+						<!-- projects card -->
+						<!-- fullhouse -->
+						<section class="spotlight style1 orient-left content-align-left image-position-left	 onscroll-image-fade-in">
+							<div class="content">
+								<h3>Full House ~ <a class="work" href="/fullhouse" target="_blank" style="color:lightblue">HackTX PWC Challenge Winner!</a> — 2019</h3>		
+								<ul>
+									<li>Help shelters manage their inventory by determining scarcity or surplus</li>
+									<li>connect shelters with others that may have the supplies that they need</li>
+									<li>Full House accomplishes this with a search tool that lets users easily query the inventory, and with a dashboard that recommends other shelters</li>
+									<br><p class="tools">Tools: React, Node.js, Express, Python, Beautifulsoup</p>
+								</ul>
+								<ul class="actions stacked">
+									<li><a href="/fullhouse" class="button small wide smooth-scroll-middle">Check it out</a></li>
+								</ul>
+							</div>
+							<div class="image">
+								<img src="images/fullhouse_dashboard.png" alt="" />
+							</div>
+						</section>
+
+						<!-- projects card -->
+						<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+							<div class="content">
+								<h3>Conoco Phillips ML model</span> ~ <a class="work" href="https://github.com/anikait627/TAMUdatathon" target="_blank" style="color:#202020">TAMUdatathon</a> — 2019</h3>
+								<ul>	
+									<li>Trained model to predict oil rig failure with ConocoPhilips sensor data</li>
+									<li>Obtained 99.2% success rate for failure detection predictor for rig data using random forest model.</li>
+									<br><p class="tools">Tools: Python, Jupyter Notebook, Pandas, Numpy, Random Forest</p>
+								</ul>
+								<ul class="actions stacked">
+									<li><a href="https://github.com/anikait627/TAMUdatathon" class="button small wide smooth-scroll-middle">Check it out</a></li>
+								</ul>
+							</div>
+							<div class="image conoco-pic">
+								<img class="" src="images/conoco.png" alt="" />
+							</div>
+						</section>
+
+						<!-- projects card -->
+						<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+							<div class="content">
+								<h4>Project Manager</span> ~ <a class="work" href="https://lspace.asu.edu" target="_blank" style="color:navy">NASA L’SPACE Academy</a> — Jan 2019 - May 2019</h4>
+								<ul>	
+									<li>Worked with the engineering team on the selection, design, and verification of a mechanical descent by reviewing system functional requirements and developing simulation models</li>
+									<li>Scripted models, charts, and simulations of the possible flight plan for the Lucy rovers using python</li>
+									<li>Wrote and presented a preliminary design report based on the models and research developed for the Lucy Space Mission</li>
+									<br><p class="tools">Tools: Python, Numpy, Pandas, Matplotlob, CAD, Solidworks</p>
+								</ul>
+								<ul class="actions stacked">
+									<li><a href="/PDR.pdf" class="button small wide smooth-scroll-middle">Read the PDR</a></li>
+								</ul>
+							</div>
+							<div class="image nasa-pic">
+								<img src="images/trojans.gif" alt="" />
+							</div>
+						</section>
+
+					</section>
+				<!-- Footer -->
+					<footer class="wrapper style1 align-center">
+						<div class="inner">
+							<p>Feel Free To Get In Touch With Me :^)</p>
+							<ul class="icons">
+								<li><a href="resume.pdf" class="icon solid style2 fa-file-alt icon-color"><span class="label">Resume</span></a></li>
+								<!-- <li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li> -->
+								<li><a href="https://github.com/anikait627" class="icon brands style2 fa-github icon-color"><span class="label">Github</span></a></li>
+								<li><a href="https://www.linkedin.com/in/anikait/" class="icon brands style2 fa-linkedin-in icon-color"><span class="label">LinkedIn</span></a></li>
+								<li><a href="mailto:anikaitsharma@yahoo.com" class="icon style2 fa-envelope icon-color"><span class="label">Email</span></a></li>
+							</ul>
+							<div class="contact-footer">
+								<div class="footer-description">
+								  <p style="display: inline;">Made with </p>
+								  <span style="display: inline;"><i class="fa fa-heart fa-1x" aria-hidden="true" id="heart-beat" onclick="darkLight()"></i> by Anikait</span>
+								</div>
+							</div>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
