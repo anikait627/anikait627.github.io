@@ -96,3 +96,16 @@
   object-fit: contain !important;
   object-position: center !important;
 }
+
+.image {
+  transition: filter 1s ease;
+}
+
+.nightmode {
+  filter : invert(1);
+  transition: filter 1s ease;
+}
+
+.nightmode .re-invert {
+  filter : invert(1);
+}
