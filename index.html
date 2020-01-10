@@ -83,7 +83,7 @@
 					$('body').toggleClass('nightmode', true);
 				localStorage.toggled = "nightmode";
 				} else {
-					$('body').toggleClass('nightmode', false);
+					$('body').toggleClass('nightmode', false).css({"transition": "1s all ease"});
 				localStorage.toggled = "";
 				}
 			};
