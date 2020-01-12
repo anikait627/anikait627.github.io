@@ -69,6 +69,19 @@
 					}
 				})()
 			})
+
+
+
+			$('body').toggleClass(localStorage.toggled);
+			function darkLight() {
+				if (localStorage.toggled != 'nightmode') {
+					$('body').toggleClass('nightmode', true);
+				localStorage.toggled = "nightmode";
+				} else {
+					$('body').toggleClass('nightmode', false).css({"transition": "1s all ease"});
+				localStorage.toggled = "";
+				}
+			};
 			
 		</script>
 
@@ -106,7 +119,7 @@
 								<li><a href="#first" class="button small wide smooth-scroll-middle">Check Out My Portfolio!</a></li>
 							</ul>
 						</div>
-						<div class="image main-pic">
+						<div class="image main-pic re-invert">
 							<img src="images/flower.jpg" alt="" />
 						</div>
 					</section>
@@ -126,8 +139,8 @@
 								<br><p class="tools">Tools: React.js, C#, .Net Core</p>
 							</ul>
 						</div>
-						<div class="image nepris-pic">
-							<img src="images/nepris.svg" alt="" />
+						<div class="image nepris-pic re-invert">
+							<img src="images/nepris.svg" class="re-invert" alt="" />
 						</div>
 					</section>
 
@@ -142,7 +155,7 @@
 								<br><p class="tools">Tools: JavaScript, Node.js, Puppeteer, Linux, Figma, Mustache, Kibana</p>
 							</ul>
 						</div>
-						<div class="image" style="background-color: white !important;">
+						<div class="image re-invert" style="background-color: white !important;">
 							<img src="images/bungee3.png" alt="" />
 						</div>
 					</section>
@@ -158,7 +171,7 @@
 								<br><p class="tools">Tools: Python, Jupyter Notebook, OpenCV, matlab</p>
 							</ul>
 						</div>
-						<div class="image avfl-pic" style="background-color: white !important;">
+						<div class="image avfl-pic " style="background-color: white !important;">
 							<img src="images/avfl.png " alt="" />
 						</div>
 					</section>
@@ -172,7 +185,7 @@
 								<br><p class="tools">Tools: Unreal Engine 4, C++</p>
 							</ul>
 						</div>
-						<div class="image small" style="background-color: white !important;">
+						<div class="image small re-invert style="background-color: white !important;">
 							<img src="images/astro.jpg" alt="" />
 						</div>
 					</section>
@@ -200,7 +213,7 @@
 								<li><a href="/fullhouse" class="button small wide smooth-scroll-middle">Check it out</a></li>
 							</ul>
 						</div>
-						<div class="image" style="background-color:#92e3e9">
+						<div class="image re-invert" style="background-color:#92e3e9">
 							<img src="images/fullhouse_dashboard.png" alt="" />
 						</div>
 					</section>
@@ -218,7 +231,7 @@
 								<li><a href="https://github.com/anikait627/TAMUdatathon" class="button small wide smooth-scroll-middle">Check it out</a></li>
 							</ul>
 						</div>
-						<div class="image conoco-pic">
+						<div class="image re-invert conoco-pic">
 							<img class="" src="images/conoco.png" alt="" />
 						</div>
 					</section>
