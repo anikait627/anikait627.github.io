@@ -2,89 +2,89 @@
   background-color: white !important;
 } */
 .nepris-pic {
-    background: linear-gradient(45deg, #ab7aad, #f7808b);
+  background: linear-gradient(45deg, #ab7aad, #f7808b);
 }
 .conoco-pic {
-    padding: 50px;
-    background: linear-gradient(45deg, #ff3e3e, #ff0099);
+  padding: 50px;
+  background: linear-gradient(45deg, #ff3e3e, #ff0099);
 }
 .helping-pic img {
   object-fit: contain !important;
   position: relative !important;
 }
 .conoco-pic img {
-    object-fit: contain !important;
-    position: relative !important;
-    filter: invert(1) grayscale(1) brightness(10);
+  object-fit: contain !important;
+  position: relative !important;
+  filter: invert(1) grayscale(1) brightness(10);
 }
-.nasa-pic img{
-    object-fit: contain !important;
-    position: relative !important;
-    filter: invert(1);
-    background-color: black;
+.nasa-pic img {
+  object-fit: contain !important;
+  position: relative !important;
+  filter: invert(1);
+  background-color: black;
 }
-.avfl-pic{
-    padding: 20px;
-    background-color: white !important;
+.avfl-pic {
+  padding: 20px;
+  background-color: white !important;
 }
-.avfl-pic img{
-    object-fit: contain !important;
-    position: relative !important;
+.avfl-pic img {
+  object-fit: contain !important;
+  position: relative !important;
 }
-.work{
-    text-decoration: none;
+.work {
+  text-decoration: none;
 }
 .work:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 .button:hover {
-    color:#8d5a97 !important;
-    box-shadow: inset 0 0 0 1px #8d5a97 !important;
+  color: #8d5a97 !important;
+  box-shadow: inset 0 0 0 1px #8d5a97 !important;
 }
 .button:active {
-    color:#8d5a97 !important;
-    background: none !important;
-    box-shadow: inset 0 0 0 1px #8d5a97 !important;
+  color: #8d5a97 !important;
+  background: none !important;
+  box-shadow: inset 0 0 0 1px #8d5a97 !important;
 }
 .icon-color:hover::before {
-    color:#8d5a97 !important;
-    box-shadow: inset 0 0 0 1px #8d5a97 !important;
+  color: #8d5a97 !important;
+  box-shadow: inset 0 0 0 1px #8d5a97 !important;
 }
 .icon-color:active::before {
-    color:#8d5a97 !important;
-    background: none !important;
-    box-shadow: inset 0 0 0 1px #8d5a97 !important;
+  color: #8d5a97 !important;
+  background: none !important;
+  box-shadow: inset 0 0 0 1px #8d5a97 !important;
 }
 @keyframes heartBeat {
-    0% {
-      -webkit-transform: scale(1);
-      transform: scale(1);
-    }
-  
-    14% {
-      -webkit-transform: scale(1.3);
-      transform: scale(1.3);
-    }
-  
-    28% {
-      -webkit-transform: scale(1);
-      transform: scale(1);
-    }
-  
-    42% {
-      -webkit-transform: scale(1.3);
-      transform: scale(1.3);
-    }
-  
-    70% {
-      -webkit-transform: scale(1);
-      transform: scale(1);
-    }
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
   }
-  
-  #heart-beat{
-    animation: heartBeat 2s infinite;
+
+  14% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
   }
+
+  28% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  42% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+
+  70% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+#heart-beat {
+  animation: heartBeat 2s infinite;
+}
 .main-pic {
   padding: 50px !important;
   background-color: white !important;
@@ -92,7 +92,7 @@
 
 @media screen and (orientation: portrait) {
   .main-pic {
-    padding: 0px !important
+    padding: 0px !important;
   }
 }
 .main-pic img {
@@ -106,10 +106,23 @@
 }
 
 .nightmode {
-  filter : invert(1);
+  filter: invert(1);
   transition: filter 1s ease;
 }
 
 .nightmode .re-invert {
-  filter : invert(1);
+  filter: invert(1);
+}
+
+.web-link {
+  text-decoration: none !important;
+  color: #8d5a97 !important;
+}
+.web-link:hover {
+  text-decoration: underline !important;
+  color: #8d5a97 !important;
+}
+
+.web-link-all li {
+  display: inline-block !important;
 }
