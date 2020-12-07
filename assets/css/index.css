@@ -116,6 +116,7 @@ a.footer-icon:hover {
     padding: 0px !important;
   }
 }
+
 .main-pic img {
   position: relative !important;
   object-fit: contain !important;
@@ -168,4 +169,15 @@ a.footer-icon:hover {
 
 .email:hover {
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 530px) {
+  .foot-container {
+    flex-direction: column;
+  }
+
+  .foot-section {
+    margin-left: 40px;
+    margin-bottom: 20px;
+  }
 }
