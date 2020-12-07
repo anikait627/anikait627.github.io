@@ -20,7 +20,11 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link rel="stylesheet" href="assets/css/index.css"/>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-152513593-1"></script>
+		<!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://kit.fontawesome.com/45c851fa55.js"></script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous"> -->
 		<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
@@ -81,6 +85,12 @@
 				localStorage.toggled = "";
 				}
 			};
+
+			// adding audio file
+			function playAudio() {
+				var name = document.getElementById("myAudio"); 
+				name.play();
+			}
 			
 		</script>
 
@@ -93,7 +103,18 @@
 				<!-- One -->
 					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
-							<h2><span id="hello-culture">Hi!</span> My name is Anikait</h2>
+							<!-- audio -->
+							<div style="width: 100%;">
+								<audio id="myAudio"> 
+								  <source src="images/anikait-sharma.mp3" type="audio/mpeg">
+								</audio>
+							</div>
+							<!-- header -->
+							<span style="flex-shrink: 0;">
+								<h2 style="display: inline;"><span id="hello-culture">Hi!</span> My name is Anikait</h2>
+								<!-- <i class='fas fa-volume-up zoom' onclick="playAudio()" style='font-size:12px; display: inline;'></i> -->
+							</span>
+
 							<div class="">
 								<p class="major">I’m a student at <a href="http://tamu.edu" class="work" style="color:maroon;" target="_blank">Texas A&M University</a> studying Computer Science and Applied Mathematics.</p>
 								<p class="major">Currently I'm a Software Developer at <a href="https://nepris.com" class="work" target="_blank" style="color:#18ba9b">Nepris Inc</a>. I previously worked at
@@ -303,29 +324,37 @@
 						</div>
 					</section>
 				<!-- Footer -->
-					<footer class="wrapper style1 align-center">
-						<div class="inner">
-							<!-- <div class="footer-description">
-								<p>Feel Free To Get In Touch With Me :^)</p>
-							</div> -->
-								<ul class="web-link-all" >
-									<p>Feel Free To Get In Touch With Me :^)</p>
-									<li><a href="resume.pdf" class="web-link"><span class="label">Resume </span></a></li> 
-									<li>&middot;</li>
-									<li><a href="https://github.com/anikait627" class="web-link"><span class="label">Github</span></a></li>
-									<li>&middot;</li>
-									<li><a href="https://www.linkedin.com/in/anikait/" class="web-link"><span class="label">Linkedin</span></a></li>
-									<li>&middot;</li>
-									<li><a href="mailto:anikaitsharma@yahoo.com" class="web-link"><span class="label">Email</span></a></li>
-								</ul>
-							<div class="contact-footer">
-								<div class="footer-description">
-								  <p style="display: inline;">Made with </p>
-								  <span style="display: inline;"><i class="fa fa-heart fa-1x" aria-hidden="true" id="heart-beat" onclick="darkLight()"></i> by Anikait</span>
+			
+					<div class="container" style="margin-bottom: 60px;">
+						<!-- footer -->
+						<div class="row justify-content-between" id="footer" style="flex-wrap: wrap; padding-top: 50px; display: flex; width: 100%; justify-content: space-around;">
+							<!-- heart -->
+							<div class="" style="flex-shrink: 0;">
+								<p style="display: inline;">made with </p>
+								<span style="display: inline;"><i class="fa fa-heart fa-1x" aria-hidden="true" id="heart-beat" onclick="darkLight()"></i> by anikait</span>
+							</div>
+					
+							<div class="" style="flex-shrink: 0;">
+								<h4 style="font-weight: bold;">email</h4>
+								<div class="email" style="color: black !important;  margin-top: -10px">
+									<a  style="color: black !important; text-decoration: none;" href="mailto:anikaitsharma@yahoo.com">anikaitsharma@yahoo.com</a>          
+								</div>
+							</div>
+					
+							<div class="" style="flex-shrink: 0;">
+								<h4 style="font-weight: bold;">connect</h4>
+								<div class="d-flex" style="color: black !important;  margin-top: -10px;">
+									<!-- <a href="resume.pdf"><i class="far fa-file-alt icon" style="font-size:24px; color: black; "></i></a>
+									<a href="https://linkedin.com/in/anikait"><i class="fab fa-linkedin icon" style="font-size:24px; color: black;"></i></a>
+									<a href="https://github.com/anikait627"><i class="fa fa-github icon" style="font-size:24px; color: black;"></i></a> -->
+									<a href="resume.pdf" class="footer-icon icon style1 fa-file-alt"><span class="label">Resume</span></a>
+									<a href="https://github.com/anikait627" class="footer-icon icon brands style1 fa-github " style="padding-left: 20px;"><span class="label">Github</span></a>
+									<a href="https://www.linkedin.com/in/anikait/" class="footer-icon icon brands style1 fa-linkedin-in" style="padding-left: 20px;"><span class="label">LinkedIn</span></a>
 								</div>
 							</div>
 						</div>
-					</footer>
+					
+					</div>
 
 			</div>
 
