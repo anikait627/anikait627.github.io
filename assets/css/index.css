@@ -4,6 +4,9 @@
 .nepris-pic {
   background: linear-gradient(45deg, #ab7aad, #f7808b);
 }
+.nepris-pic-2 {
+  background-color: white !important;
+}
 .conoco-pic {
   padding: 50px;
   background: linear-gradient(45deg, #ff3e3e, #ff0099);
@@ -181,3 +184,4 @@ a.footer-icon:hover {
     margin-bottom: 20px;
   }
 }
+
