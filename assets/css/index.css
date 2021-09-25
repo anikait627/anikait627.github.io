@@ -12,6 +12,13 @@
   object-fit: contain !important;
   position: relative !important;
 }
+.linkedin img {
+  object-fit: contain !important;
+  position: relative !important;
+  /* filter: invert(1); */
+  /* background-color: black; */
+  padding-left: 20px;
+}
 .conoco-pic img {
   object-fit: contain !important;
   position: relative !important;
