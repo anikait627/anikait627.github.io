@@ -142,6 +142,11 @@ a.footer-icon:hover {
   filter: invert(1);
 }
 
+.nightmode .black-background {
+  filter: invert(1);
+  /* background-color: black !important; */
+}
+
 .web-link {
   text-decoration: none !important;
   color: black !important;
@@ -187,4 +192,3 @@ a.footer-icon:hover {
     margin-bottom: 20px;
   }
 }
-
