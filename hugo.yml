@@ -1,0 +1,111 @@
+baseURL: https://anikaitsharma.com
+languageCode: en-us
+title: anikait sharma
+theme: PaperMod
+
+
+enableRobotsTXT: true
+buildDrafts: true
+buildFuture: true
+buildExpired: false
+copyright: "made with \U00002661 by anikait"
+
+# *** FIX THIS ***
+googleAnalytics: UA-123-45
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: anikait sharma
+  description: "Anikait's portfolio. A collection of work showcasing his personal projects, experience, and hobbies."
+  keywords: [Anikait, Sharma, Anikait Sharma, San Francisco, New York City, Texas, Blog, Portfolio, Experience, Work, Projects, Linkedin, Email, Resume]
+  images: images/me.png
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: false
+  ShowShareButtons: false
+  ShowPostNavLinks: false
+  ShowBreadCrumbs: false
+  ShowCodeCopyButtons: false
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: false
+  UseHugoToc: false
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  assets:
+    disableHLJS: true # to disable highlight.js
+    disableFingerprinting: false
+    favicon: images/favicon/favicon.ico
+    favicon16x16: images/favicon/favicon-16x16.png
+    favicon32x32: images/favicon/favicon-32x32.png
+    apple_touch_icon: images/favicon/apple-touch-icon.png
+
+  label:
+    text: "anikait sharma"
+    icon: /apple-touch-icon.png
+    iconHeight: 35
+
+  # home-info mode
+  # i previously worked on viva pulse at *[glint](https://glint.com)*, recommendation systems at *[nepris inc.](https://nepris.com)*, and market intelligence at *[bungee tech](http://bungeetech.com)*.
+  homeInfoParams:
+    Title: "howdy \U0001F920"
+    Content: >
+      my name is anikait and i'm a product driven software engineer interested in all things ai/ml, financial mathematics, and computer graphics. 
+      i'm currently building scalable ml infra and spearheading skills-first hiring at *[linkedin](https://linkedin.com)* 👨🏽‍💻
+
+  socialIcons:
+    - name: email
+      url: "mailto:anikaitsharma@yahoo.com"
+    - name: cv
+      url: pdf/resume.pdf
+    - name: github
+      url: "https://github.com/anikait627"
+    - name: linkedin
+      url: "https://linkedin.com/in/anikait"
+
+  # *** FIX THIS ***
+  analytics:
+    google:
+      SiteVerificationTag: "XYZabc"
+    bing:
+      SiteVerificationTag: "XYZabc"
+    yandex:
+      SiteVerificationTag: "XYZabc"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: false # hide on single page
+
+menu:
+  main:
+    - identifier: projects
+      name: projects
+      url: /projects/
+      weight: 20
+    - identifier: about-me
+      name: about me
+      url: /me/
+      weight: 30
+
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    codeFences: true
+    guessSyntax: true
+    lineNos: true
+    style: monokai
