@@ -8,7 +8,7 @@ enableRobotsTXT: true
 buildDrafts: true
 buildFuture: true
 buildExpired: false
-copyright: "made with \U00002661 by anikait"
+copyright: "made with \U00002661 by anikait |"
 
 # *** FIX THIS ***
 googleAnalytics: G-BK4FC7EJPM

@@ -1,5 +1,5 @@
 ---
-title: helping eye 👀
+title: helping eye 🦉
 summary: A new chrome extension which streamlines tasks for those with visual impairments. The bot gathers input from the user and uses machine learning and NLP to associate user input with actions that the bot can execute.
 cover:
     image: images/helping-eye.png
