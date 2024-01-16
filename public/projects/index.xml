@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>projects on anikait sharma</title>
+    <link>https://anikaitsharma.com/projects/</link>
+    <description>Recent content in projects on anikait sharma</description>
+    <image>
+      <title>anikait sharma</title>
+      <url>https://anikaitsharma.com/105</url>
+      <link>https://anikaitsharma.com/105</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>made with ♡ by anikait |</copyright>
+    <atom:link href="https://anikaitsharma.com/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>helping eye 🦉</title>
+      <link>https://anikaitsharma.com/projects/helpingeye/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://anikaitsharma.com/projects/helpingeye/</guid>
+      <description>A new chrome extension which streamlines tasks for those with visual impairments. The bot gathers input from the user and uses machine learning and NLP to associate user input with actions that the bot can execute.</description>
+    </item>
+    <item>
+      <title>fullhouse 🏡</title>
+      <link>https://anikaitsharma.com/projects/fullhouse/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://anikaitsharma.com/projects/fullhouse/</guid>
+      <description>A new product which helps shelters manage their inventory by determining scarcity or surplus of the items. Additionally, it allows for inter-shelters communication to discuss supplies that can be given out.</description>
+    </item>
+    <item>
+      <title>safe4u2vote 🗳️</title>
+      <link>https://anikaitsharma.com/projects/safe4u2vote/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://anikaitsharma.com/projects/safe4u2vote/</guid>
+      <description>An app about regulating mass voting while maintaining local social distancing practices during voting seasons in the united states.</description>
+    </item>
+  </channel>
+</rss>
