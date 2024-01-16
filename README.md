@@ -1,1 +1,0 @@
-portfolio and maybe a blog
