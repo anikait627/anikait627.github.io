@@ -1,6 +1,6 @@
 baseURL: https://anikaitsharma.com
 languageCode: en-us
-title: anikait sharma
+title: Anikait Sharma
 theme: PaperMod
 
 
@@ -8,7 +8,7 @@ enableRobotsTXT: true
 buildDrafts: true
 buildFuture: true
 buildExpired: false
-copyright: "made with \U00002661 by anikait |"
+copyright: "Made with \U00002661 by Anikait |"
 
 # *** FIX THIS ***
 googleAnalytics: G-BK4FC7EJPM
@@ -19,9 +19,15 @@ minify:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: anikait sharma
+  author: Anikait Sharma
+  hideAuthor: true
+  # Keep PaperMod from falling back to site.Social, removed in newer Hugo versions.
+  social:
+    twitter: ""
+    facebook_admin: ""
+  title: Anikait Sharma
   description: "Anikait's portfolio. A collection of work showcasing his personal projects, experience, and hobbies."
-  keywords: [Anikait, Sharma, Anikait Sharma, San Francisco, New York City, Texas, Blog, Portfolio, Experience, Work, Projects, Linkedin, Email, Resume]
+  keywords: [Anikait, Sharma, Anikait Sharma, San Francisco, New York City, Texas, Blog, Portfolio, Experience, Work, Projects, LinkedIn, Email, Resume]
   images: images/me.png
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
@@ -52,17 +58,18 @@ params:
     apple_touch_icon: images/favicon/apple-touch-icon.png
 
   label:
-    text: "anikait sharma"
+    text: "Anikait Sharma"
     icon: /apple-touch-icon.png
     iconHeight: 35
 
   # home-info mode
   # i previously worked on viva pulse at *[glint](https://glint.com)*, recommendation systems at *[nepris inc.](https://nepris.com)*, and market intelligence at *[bungee tech](http://bungeetech.com)*.
   homeInfoParams:
-    Title: "howdy \U0001F920"
+    Title: "Howdy \U0001F920"
     Content: >
-      my name is anikait and i'm a product driven software engineer interested in all things ai/ml, financial mathematics, and computer graphics. 
-      i'm currently building scalable ml infra and spearheading skills-first hiring at *[linkedin](https://linkedin.com)* 👨🏽‍💻
+      I’m Anikait, a product-driven software engineer who loves taking products from idea to production.
+      My interests lie in AI agents, financial mathematics, and computer graphics.
+      I’m currently building and deploying AI agents at *[Decagon](https://decagon.ai/)*. 👨🏽‍💻
 
   socialIcons:
     - name: email
@@ -91,11 +98,11 @@ params:
 menu:
   main:
     - identifier: projects
-      name: projects
+      name: Projects
       url: /projects/
       weight: 20
     - identifier: about-me
-      name: about me
+      name: About me
       url: /me/
       weight: 30
 

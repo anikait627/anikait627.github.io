@@ -1,4 +1,4 @@
 ---
-title: projects
+title: Projects
 slug: projects
 ---
