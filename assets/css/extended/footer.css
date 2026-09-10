@@ -1,0 +1,16 @@
+.footer-heart {
+    display: inline-block;
+    transform-origin: center;
+    animation: footer-heartbeat 2.4s ease-in-out infinite;
+}
+
+@keyframes footer-heartbeat {
+    0%, 35%, 100% { transform: scale(1); }
+    10% { transform: scale(1.2); }
+    18% { transform: scale(1); }
+    26% { transform: scale(1.14); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .footer-heart { animation: none; }
+}
