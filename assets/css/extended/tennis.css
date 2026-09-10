@@ -28,5 +28,15 @@
   .tennis-score { position: static; width: 172px; margin: 0 0 12px auto; }
 }
 
-.player .tennis-cap { fill: #e8dfc9; stroke: var(--primary); stroke-width: 1.8; }
-.player .tennis-cap-brim { stroke-width: 2.5; }
+.player .tennis-cap { fill: var(--racket-color); stroke: var(--racket-color); stroke-width: 1; }
+.player .tennis-cap-brim { stroke: var(--racket-color); stroke-width: 2.5; }
+
+.player-far { --racket-color: #29b6ff; }
+.player-near { --racket-color: #ff4f60; }
+.player .racket-outline { stroke: #202b35; stroke-width: 3.5; }
+.player .racket-frame { stroke: var(--racket-color); stroke-width: 2; }
+.player .racket-strings { stroke: #eee9d9; stroke-width: .6; stroke-linecap: butt; }
+.player .tennis-bandana { fill: var(--racket-color); stroke: #202b35; stroke-width: .8; }
+.player .tennis-bandana-ties { stroke: var(--racket-color); stroke-width: 2; }
+
+.player .racket-handle { stroke: var(--racket-color); stroke-width: 3; stroke-linecap: round; }
