@@ -1,49 +1,52 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>anikait sharma</title>
-    <link>https://anikaitsharma.com/</link>
-    <description>Recent content on anikait sharma</description>
+    <title>Anikait Sharma</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Anikait Sharma</description>
     <image>
-      <title>anikait sharma</title>
-      <url>https://anikaitsharma.com/105</url>
-      <link>https://anikaitsharma.com/105</link>
+      <title>Anikait Sharma</title>
+      <url>http://localhost:1313/105</url>
+      <link>http://localhost:1313/105</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>made with ♡ by anikait |</copyright>
-    <atom:link href="https://anikaitsharma.com/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Made with ♡ by Anikait |</copyright>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>helping eye 🦉</title>
-      <link>https://anikaitsharma.com/projects/helpingeye/</link>
+      <title>Helping Eye 🦉</title>
+      <link>http://localhost:1313/projects/helpingeye/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://anikaitsharma.com/projects/helpingeye/</guid>
-      <description>A new chrome extension which streamlines tasks for those with visual impairments. The bot gathers input from the user and uses machine learning and NLP to associate user input with actions that the bot can execute.</description>
+      <guid>http://localhost:1313/projects/helpingeye/</guid>
+      <description>A new Chrome extension which streamlines tasks for those with visual impairments. The bot gathers input from the user and uses machine learning and NLP to associate user input with actions that the bot can execute.</description>
     </item>
     <item>
-      <title>fullhouse 🏡</title>
-      <link>https://anikaitsharma.com/projects/fullhouse/</link>
+      <title>Full House 🏡</title>
+      <link>http://localhost:1313/projects/fullhouse/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://anikaitsharma.com/projects/fullhouse/</guid>
+      <guid>http://localhost:1313/projects/fullhouse/</guid>
       <description>A new product which helps shelters manage their inventory by determining scarcity or surplus of the items. Additionally, it allows for inter-shelters communication to discuss supplies that can be given out.</description>
     </item>
     <item>
       <title></title>
-      <link>https://anikaitsharma.com/me/</link>
+      <link>http://localhost:1313/me/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://anikaitsharma.com/me/</guid>
-      <description>hey there 👋
-my name is anikait! i’m a recent graduate from texas a&amp;amp;m university where i studied computer science and applied mathematics.
-i&amp;rsquo;m passionate about solving complex problems with real world applications. my interests primarily lie in ai/ml, consumer products, and startups.
-previously i worked on viva pulse at glint, recommendation systems at nepris inc., and market intelligence at bungee tech.
-outside of work, you&amp;rsquo;ll likely find me scaling rocks, smashing tennis balls, experimenting culinary recipes, or concert hopping with my friends.</description>
+      <guid>http://localhost:1313/me/</guid>
+      <description>&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;images/flower.jpg#center&#34; width=&#34;300px&#34; height=&#34;auto&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;p&gt;Hey there 👋&lt;/p&gt;
+&lt;p&gt;I’m Anikait, a product-driven agent engineer building and deploying AI agents at &lt;em&gt;&lt;a href=&#34;https://decagon.ai/&#34;&gt;Decagon&lt;/a&gt;&lt;/em&gt;. I’m passionate about solving complex problems with real-world applications.&lt;/p&gt;
+&lt;p&gt;Previously, I spearheaded agentic ad insights and built scalable ML infrastructure at &lt;em&gt;&lt;a href=&#34;https://linkedin.com/&#34;&gt;LinkedIn&lt;/a&gt;&lt;/em&gt;. I also worked on Viva Pulse at &lt;em&gt;&lt;a href=&#34;https://community.glintinc.com/&#34;&gt;Glint&lt;/a&gt;&lt;/em&gt;, recommendation systems at &lt;em&gt;&lt;a href=&#34;https://nepris.com/&#34;&gt;Nepris Inc.&lt;/a&gt;&lt;/em&gt;, and market intelligence at &lt;em&gt;&lt;a href=&#34;http://bungeetech.com/&#34;&gt;Bungee Tech&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Outside of work, you’ll likely find me experimenting with new recipes, playing tennis, competing in triathlons, or concert hopping with my friends :^)&lt;/p&gt;</description>
     </item>
     <item>
-      <title>safe4u2vote 🗳️</title>
-      <link>https://anikaitsharma.com/projects/safe4u2vote/</link>
+      <title>Safe4U2Vote 🗳️</title>
+      <link>http://localhost:1313/projects/safe4u2vote/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://anikaitsharma.com/projects/safe4u2vote/</guid>
-      <description>An app about regulating mass voting while maintaining local social distancing practices during voting seasons in the united states.</description>
+      <guid>http://localhost:1313/projects/safe4u2vote/</guid>
+      <description>An app about regulating mass voting while maintaining local social distancing practices during voting seasons in the United States.</description>
     </item>
   </channel>
 </rss>

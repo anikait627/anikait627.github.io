@@ -6,7 +6,10 @@
 .court-surround { fill: var(--court-surround); }
 .court-fill { fill: var(--court-surface); }
 .court-lines { fill: none; stroke: var(--court-line); stroke-width: 1.2; opacity: .9; }
-.court-lines .net { stroke: #e8e7df; stroke-width: 2; }
+.net-body { fill: #15231f; fill-opacity: .38; }
+.net-mesh { fill: none; stroke: #17251f; stroke-width: .65; stroke-opacity: .7; }
+.net-tape { fill: none; stroke: #fff9e9; stroke-width: 2.6; }
+.net-posts { fill: none; stroke: #e6e2d5; stroke-width: 2.8; stroke-linecap: round; }
 .player { fill: var(--theme); stroke: var(--primary); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
 .player path, .player ellipse { fill: none; }
 .racket-arm { transform-origin: 0 0; }
