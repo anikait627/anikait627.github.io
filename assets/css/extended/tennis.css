@@ -1,0 +1,29 @@
+.tennis { width: 100%; max-width: 600px; margin: clamp(56px, 9vh, 104px) auto 0; color: var(--secondary); }
+.tennis svg { display: block; width: 100%; height: auto; overflow: visible; }
+/* Tournament-inspired palettes follow the site's existing theme toggle. */
+.tennis { --court-surface: #3675a5; --court-surround: #538367; --court-line: #f5f2df; }
+.dark .tennis { --court-surface: #b96342; --court-surround: #91492f; --court-line: #fff1dc; }
+.court-surround { fill: var(--court-surround); }
+.court-fill { fill: var(--court-surface); }
+.court-lines { fill: none; stroke: var(--court-line); stroke-width: 1.2; opacity: .9; }
+.court-lines .net { stroke: #e8e7df; stroke-width: 2; }
+.player { fill: var(--theme); stroke: var(--primary); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+.player path, .player ellipse { fill: none; }
+.racket-arm { transform-origin: 0 0; }
+.tennis-ball { fill: #b4c947; stroke: #6d8021; stroke-width: 1; }
+.tennis-shadow { fill: #18251c; opacity: .3; }
+
+.tennis { position: relative; }
+.tennis-score { position: absolute; left: calc(100% + 12px); top: 30%; width: 172px; color: var(--primary); font-size: 12px; }
+.tennis-score[hidden] { display: none; }
+.tennis-score table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+.tennis-score th, .tennis-score td { padding: 5px; text-align: center; border-bottom: 1px solid var(--border); }
+.tennis-score th:first-child { text-align: left; }
+.tennis-score thead { color: var(--secondary); font-size: 10px; }
+.tennis-result { margin: 8px 0 0; color: var(--secondary); min-height: 2.5em; }
+@media (max-width: 1100px) {
+  .tennis-score { position: static; width: 172px; margin: 0 0 12px auto; }
+}
+
+.player .tennis-cap { fill: #e8dfc9; stroke: var(--primary); stroke-width: 1.8; }
+.player .tennis-cap-brim { stroke-width: 2.5; }

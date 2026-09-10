@@ -1,0 +1,18 @@
+<section class="tennis" aria-label="A little cross-court tennis rally">
+  <aside class="tennis-score" hidden aria-label="Tennis score">
+    <table><thead><tr><th scope="col">Player</th><th scope="col">Games</th><th scope="col">Points</th></tr></thead>
+    <tbody><tr><th scope="row">You</th><td data-games="0">0</td><td data-points="0">0</td></tr>
+    <tr><th scope="row">Anikait</th><td data-games="1">0</td><td data-points="1">0</td></tr></tbody></table>
+    <p class="tennis-result" role="status" aria-live="polite">Play ball!</p>
+  </aside>
+  <svg viewBox="0 -25 640 305" role="img" aria-label="Two stick figures rally a tennis ball diagonally across a court">
+    <path class="court-surround" d="M117 16H484L616 258H7Z"/>
+    <path class="court-fill" d="M140 40H465L570 230H50Z"/>
+    <g class="court-lines"><path d="M140 40H465L570 230H50ZM180.625 40L115.000 230M424.375 40L505.000 230M165.481 83.846H442.981M130.144 186.154H486.394M304.231 83.846L308.269 186.154"/><path class="net" d="M87 135H526M87 120V150M526 120V150"/></g>
+    <g class="player player-far" transform="translate(410 6)"><circle cy="-15" r="7"/><path class="tennis-cap" d="M-8-17Q-7-26 1-24Q7-23 8-17Z"/><path class="tennis-cap-brim" d="M-8-17H14"/><path d="M0-8V16M0 0L-14 9"/><path class="legs" d="M0 16L-13 32M0 16L12 32"/><g class="racket-arm"><path d="M0 0L15 9L25 0"/><ellipse cx="32" cy="-9" rx="7" ry="11" transform="rotate(35 32 -9)"/></g></g>
+    <g class="player player-near" transform="translate(190 205)"><circle cy="-15" r="8"/><path d="M0-7V18M0 0L-17 8"/><path class="legs" d="M0 16L-13 32M0 16L12 32"/><g class="racket-arm"><path d="M0 0L18 10L30 0"/><ellipse cx="37" cy="-10" rx="8" ry="12" transform="rotate(35 37 -10)"/></g></g>
+    <ellipse class="tennis-shadow" cx="227" cy="214" rx="5" ry="2"/>
+    <circle class="tennis-ball" cx="227" cy="195" r="4"/>
+  </svg>
+</section>
+<script src="{{ "js/tennis.js" | relURL }}" defer></script>
