@@ -1,0 +1,25 @@
+<section class="tennis" aria-label="A little cross-court tennis rally">
+  <aside class="tennis-score" hidden aria-label="Tennis score">
+    <table><thead><tr><th scope="col">Player</th><th scope="col">Games</th><th scope="col">Points</th></tr></thead>
+    <tbody><tr><th scope="row">You</th><td data-games="0">0</td><td data-points="0">0</td></tr>
+    <tr><th scope="row">Anikait</th><td data-games="1">0</td><td data-points="1">0</td></tr></tbody></table>
+    <p class="tennis-result" role="status" aria-live="polite">Play ball!</p>
+  </aside>
+  <svg viewBox="0 -25 640 305" role="img" aria-label="Two stick figures rally a tennis ball diagonally across a court">
+    <path class="court-surround" d="M117 16H484L616 258H7Z"/>
+    <path class="court-fill" d="M140 40H465L570 230H50Z"/>
+    <g class="court-lines"><path d="M140 40H465L570 230H50ZM180.625 40L115.000 230M424.375 40L505.000 230M165.481 83.846H442.981M130.144 186.154H486.394M304.231 83.846L308.269 186.154"/></g>
+
+    <g class="tennis-net" aria-hidden="true">
+      <path class="net-body" d="M87 115Q306.5 125 526 115V135H87Z"/>
+      <path class="net-mesh" d="M95 115.18V135M103 115.36V135M111 115.55V135M119 115.73V135M127 115.91V135M135 116.09V135M143 116.28V135M151 116.46V135M159 116.64V135M167 116.82V135M175 117.00V135M183 117.19V135M191 117.37V135M199 117.55V135M207 117.73V135M215 117.92V135M223 118.10V135M231 118.28V135M239 118.46V135M247 118.64V135M255 118.83V135M263 119.01V135M271 119.19V135M279 119.37V135M287 119.56V135M295 119.74V135M303 119.92V135M311 119.90V135M319 119.72V135M327 119.53V135M335 119.35V135M343 119.17V135M351 118.99V135M359 118.80V135M367 118.62V135M375 118.44V135M383 118.26V135M391 118.08V135M399 117.89V135M407 117.71V135M415 117.53V135M423 117.35V135M431 117.16V135M439 116.98V135M447 116.80V135M455 116.62V135M463 116.44V135M471 116.25V135M479 116.07V135M487 115.89V135M495 115.71V135M503 115.52V135M511 115.34V135M519 115.16V135M87 124H526M87 130H526"/>
+      <path class="net-tape" d="M87 115Q306.5 125 526 115"/>
+      <path class="net-posts" d="M87 111V137M526 111V137"/>
+    </g>
+    <g class="player player-far" transform="translate(410 6)"><circle cy="-15" r="7"/><path class="tennis-cap" d="M-7-17C-7-25 6-25 7-17Z"/><path class="tennis-cap-brim" d="M-7-17Q0-18 7-17L11-16"/><path d="M0-8V16M0 0L-14 9"/><path class="legs" d="M0 16L-13 32M0 16L12 32"/><g class="racket-arm"><path d="M0 0L15 9L23 3"/><path class="racket-handle" d="M23 3L26 0"/><g class="racket" transform="translate(32 -9) rotate(35)"><ellipse class="racket-outline" rx="7" ry="11"/><path class="racket-strings" d="M-3.50 -9.53V9.53M0.00 -11.00V11.00M3.50 -9.53V9.53M-5.60 -6.60H5.60M-6.68 -3.30H6.68M-7.00 0.00H7.00M-6.68 3.30H6.68M-5.60 6.60H5.60"/><ellipse class="racket-frame" rx="7" ry="11"/></g></g></g>
+    <g class="player player-near" transform="translate(190 205)"><circle cy="-15" r="8"/><path class="tennis-bandana" d="M-8-19Q0-22 8-19L8-15Q0-18-8-15Z"/><path class="tennis-bandana-ties" d="M-8-17L-15-12M-8-17L-16-18"/><path d="M0-7V18M0 0L-17 8"/><path class="legs" d="M0 16L-13 32M0 16L12 32"/><g class="racket-arm"><path d="M0 0L18 10L27 3"/><path class="racket-handle" d="M27 3L30 0"/><g class="racket" transform="translate(37 -10) rotate(35)"><ellipse class="racket-outline" rx="8" ry="12"/><path class="racket-strings" d="M-4.00 -10.39V10.39M0.00 -12.00V12.00M4.00 -10.39V10.39M-6.40 -7.20H6.40M-7.63 -3.60H7.63M-8.00 0.00H8.00M-7.63 3.60H7.63M-6.40 7.20H6.40"/><ellipse class="racket-frame" rx="8" ry="12"/></g></g></g>
+    <ellipse class="tennis-shadow" cx="227" cy="214" rx="5" ry="2"/>
+    <circle class="tennis-ball" cx="227" cy="195" r="4"/>
+  </svg>
+</section>
+<script src="{{ "js/tennis.js" | relURL }}" defer></script>

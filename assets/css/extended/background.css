@@ -1,0 +1,10 @@
+/* Use the About page's theme background consistently across the site. */
+body,
+body.list {
+    background: var(--theme);
+}
+
+/* Give cards a subtle contrast against the white page in light mode. */
+body:not(.dark) .post-entry {
+    background: #fafafa;
+}
