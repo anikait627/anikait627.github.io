@@ -1,0 +1,17 @@
+.comic-costume { display: none; }
+.comic-toggle { padding: 0 2px; border: 0; background: none; color: inherit; font: inherit; line-height: inherit; cursor: pointer; }
+.comic-toggle:hover, .comic-toggle[aria-pressed="true"] { color: #e65365; }
+.comic-toggle:focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; }
+.tennis-comic .comic-costume { display: inline; }
+.tennis-comic .player > circle, .tennis-comic .tennis-cap, .tennis-comic .tennis-cap-brim, .tennis-comic .tennis-bandana, .tennis-comic .tennis-bandana-ties { display: none; }
+.player .comic-costume path { fill: inherit; }
+.player .comic-costume [fill="#e94b3c"] { fill: #e94b3c; }
+.player .comic-costume [fill="#252529"] { fill: #252529; }
+.player .comic-costume [fill="#ffcf3f"] { fill: #ffcf3f; }
+.player .comic-costume [fill="#efa23c"] { fill: #efa23c; }
+.player .comic-costume [fill="#292323"] { fill: #292323; }
+.player .comic-costume ellipse { fill: #fff0d1; }
+.player .calvin ellipse { fill: #ffdab0; }
+.player .hobbes ellipse[fill="#efa23c"] { fill: #efa23c; }
+.player .comic-detail { fill: none; stroke: #292323; stroke-width: 1.5; }
+.player .tiger-tail { fill: none; stroke: #efa23c; stroke-width: 5; }
