@@ -10,7 +10,7 @@ slug: me
 
 Hey there 👋
 
-I’m Anikait, a product-driven agent engineer building and deploying AI agents at *[Decagon](https://decagon.ai/)*. I’m passionate about solving complex problems with real-world applications.
+I’m Anikait, a product-driven Agent Engineer at [*Decagon*](https://decagon.ai/), working directly on designing, building, and deploying AI agents. I love solving complex problems with real-world applications where I can turn ideas into working products.
 
 Previously, I spearheaded agentic ad insights and built scalable ML infrastructure at *[LinkedIn](https://linkedin.com/)*. I also worked on Viva Pulse at *[Glint](https://community.glintinc.com/)*, recommendation systems at *[Nepris Inc.](https://nepris.com/)*, and market intelligence at *[Bungee Tech](http://bungeetech.com/)*.
 
