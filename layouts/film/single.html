@@ -1,0 +1,33 @@
+{{- define "main" }}
+
+<article class="post-single film-page">
+  <header class="post-header">
+    {{ partial "breadcrumbs.html" . }}
+    <h1 class="post-title">{{ .Title }}</h1>
+    {{- if .Description }}
+    <div class="post-description">{{ .Description }}</div>
+    {{- end }}
+  </header>
+
+  {{- if .Content }}
+  <div class="post-content">{{ .Content }}</div>
+  {{- end }}
+
+  <div class="film-grid">
+    {{- range $i, $img := .Resources.ByType "image" }}
+    <a class="film-grid-item" href="{{ $img.RelPermalink }}" data-index="{{ $i }}" rel="noopener">
+      <img src="{{ $img.RelPermalink }}" loading="lazy" alt="{{ $.Title }} photo">
+    </a>
+    {{- end }}
+  </div>
+
+  <div class="film-lightbox" hidden role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <button type="button" class="film-lightbox-close" aria-label="Close">&times;</button>
+    <button type="button" class="film-lightbox-prev" aria-label="Previous photo">&lsaquo;</button>
+    <img class="film-lightbox-img" src="" alt="">
+    <button type="button" class="film-lightbox-next" aria-label="Next photo">&rsaquo;</button>
+  </div>
+  <script src="{{ "js/film.js" | relURL }}" defer></script>
+</article>
+
+{{- end }}{{/* end main */}}
