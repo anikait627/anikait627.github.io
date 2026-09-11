@@ -1,8 +1,8 @@
 <section class="tennis" aria-label="A little cross-court tennis rally">
   <aside class="tennis-score" hidden aria-label="Tennis score">
     <table><thead><tr><th scope="col">Player</th><th scope="col">Games</th><th scope="col">Points</th></tr></thead>
-    <tbody><tr><th scope="row">You</th><td data-games="0">0</td><td data-points="0">0</td></tr>
-    <tr><th scope="row">Anikait</th><td data-games="1">0</td><td data-points="1">0</td></tr></tbody></table>
+    <tbody><tr><th scope="row" data-player="0">You</th><td data-games="0">0</td><td data-points="0">0</td></tr>
+    <tr><th scope="row" data-player="1">Anikait</th><td data-games="1">0</td><td data-points="1">0</td></tr></tbody></table>
     <p class="tennis-result" role="status" aria-live="polite">Play ball!</p>
   </aside>
   <svg viewBox="0 -25 640 305" role="img" aria-label="Two stick figures rally a tennis ball diagonally across a court">
@@ -16,8 +16,8 @@
       <path class="net-tape" d="M87 115Q306.5 125 526 115"/>
       <path class="net-posts" d="M87 111V137M526 111V137"/>
     </g>
-    <g class="player player-far" transform="translate(410 6)"><circle cy="-15" r="7"/><path class="tennis-cap" d="M-7-17C-7-25 6-25 7-17Z"/><path class="tennis-cap-brim" d="M-7-17Q0-18 7-17L11-16"/><path d="M0-8V16M0 0L-14 9"/><path class="legs" d="M0 16L-13 32M0 16L12 32"/><g class="racket-arm"><path d="M0 0L15 9L23 3"/><path class="racket-handle" d="M23 3L26 0"/><g class="racket" transform="translate(32 -9) rotate(35)"><ellipse class="racket-outline" rx="7" ry="11"/><path class="racket-strings" d="M-3.50 -9.53V9.53M0.00 -11.00V11.00M3.50 -9.53V9.53M-5.60 -6.60H5.60M-6.68 -3.30H6.68M-7.00 0.00H7.00M-6.68 3.30H6.68M-5.60 6.60H5.60"/><ellipse class="racket-frame" rx="7" ry="11"/></g></g></g>
-    <g class="player player-near" transform="translate(190 205)"><circle cy="-15" r="8"/><path class="tennis-bandana" d="M-8-19Q0-22 8-19L8-15Q0-18-8-15Z"/><path class="tennis-bandana-ties" d="M-8-17L-15-12M-8-17L-16-18"/><path d="M0-7V18M0 0L-17 8"/><path class="legs" d="M0 16L-13 32M0 16L12 32"/><g class="racket-arm"><path d="M0 0L18 10L27 3"/><path class="racket-handle" d="M27 3L30 0"/><g class="racket" transform="translate(37 -10) rotate(35)"><ellipse class="racket-outline" rx="8" ry="12"/><path class="racket-strings" d="M-4.00 -10.39V10.39M0.00 -12.00V12.00M4.00 -10.39V10.39M-6.40 -7.20H6.40M-7.63 -3.60H7.63M-8.00 0.00H8.00M-7.63 3.60H7.63M-6.40 7.20H6.40"/><ellipse class="racket-frame" rx="8" ry="12"/></g></g></g>
+    <g class="player player-far" transform="translate(410 6)"><circle cy="-15" r="7"/><path class="tennis-cap" d="M-7-17C-7-25 6-25 7-17Z"/><path class="tennis-cap-brim" d="M-7-17Q0-18 7-17L11-16"/><path d="M0-8V16M0 0L-14 9"/><path class="legs" d="M0 16L-13 32M0 16L12 32"/>{{ partial "tennis-hobbes.html" . }}<g class="racket-arm"><path d="M0 0L15 9L23 3"/><path class="racket-handle" d="M23 3L26 0"/><g class="racket" transform="translate(32 -9) rotate(35)"><ellipse class="racket-outline" rx="7" ry="11"/><path class="racket-strings" d="M-3.50 -9.53V9.53M0.00 -11.00V11.00M3.50 -9.53V9.53M-5.60 -6.60H5.60M-6.68 -3.30H6.68M-7.00 0.00H7.00M-6.68 3.30H6.68M-5.60 6.60H5.60"/><ellipse class="racket-frame" rx="7" ry="11"/></g></g></g>
+    <g class="player player-near" transform="translate(190 205)"><circle cy="-15" r="8"/><path class="tennis-bandana" d="M-8-19Q0-22 8-19L8-15Q0-18-8-15Z"/><path class="tennis-bandana-ties" d="M-8-17L-15-12M-8-17L-16-18"/><path d="M0-7V18M0 0L-17 8"/><path class="legs" d="M0 16L-13 32M0 16L12 32"/>{{ partial "tennis-calvin.html" . }}<g class="racket-arm"><path d="M0 0L18 10L27 3"/><path class="racket-handle" d="M27 3L30 0"/><g class="racket" transform="translate(37 -10) rotate(35)"><ellipse class="racket-outline" rx="8" ry="12"/><path class="racket-strings" d="M-4.00 -10.39V10.39M0.00 -12.00V12.00M4.00 -10.39V10.39M-6.40 -7.20H6.40M-7.63 -3.60H7.63M-8.00 0.00H8.00M-7.63 3.60H7.63M-6.40 7.20H6.40"/><ellipse class="racket-frame" rx="8" ry="12"/></g></g></g>
     <ellipse class="tennis-shadow" cx="227" cy="214" rx="5" ry="2"/>
     <circle class="tennis-ball" cx="227" cy="195" r="4"/>
   </svg>

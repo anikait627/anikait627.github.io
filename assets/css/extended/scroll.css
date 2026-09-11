@@ -1,0 +1,5 @@
+/* PaperMod forces a vertical scrollbar even when the page fits. */
+html {
+    overflow-y: auto;
+    scrollbar-gutter: stable;
+}

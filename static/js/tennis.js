@@ -6,6 +6,19 @@
     const points = [0, 0];
     const games = [0, 0];
     let botMiss = false;
+    let lastPoint = null;
+    function renderResult() {
+      const names = court.classList.contains('tennis-comic') ? ['Calvin', 'Hobbes'] : ['You', 'Anikait'];
+      names.forEach((name, player) => { court.querySelector(`[data-player="${player}"]`).textContent = name; });
+      if (!lastPoint) return;
+      const { winner, wonGame } = lastPoint;
+      const deuce = points[0] >= 3 && points[1] >= 3;
+      result.textContent = wonGame ? `Game, ${names[winner]}!` :
+        deuce && points[0] === points[1] ? 'Deuce' :
+        deuce ? `Advantage ${names[points[0] > points[1] ? 0 : 1]}` :
+        `${names[1 - winner]} missed. Point to ${names[winner]}!`;
+    }
+    court.addEventListener('tennis-characters-change', renderResult);
     function scorePoint(winner) {
       points[winner]++;
       const loser = 1 - winner;
@@ -20,10 +33,8 @@
         court.querySelector(`[data-points="${player}"]`).textContent = label;
         court.querySelector(`[data-games="${player}"]`).textContent = games[player];
       });
-      result.textContent = wonGame ? `Game, ${winner === 0 ? 'you' : 'Anikait'}!` :
-        deuce && points[0] === points[1] ? 'Deuce' :
-        deuce ? `Advantage ${points[0] > points[1] ? 'you' : 'Anikait'}` :
-        winner === 0 ? 'Anikait missed. Your point!' : 'Anikait’s point';
+      lastPoint = { winner, wonGame };
+      renderResult();
     }
     let hovering = false;
     let pointerX = 190;
