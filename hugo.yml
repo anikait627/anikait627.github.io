@@ -102,7 +102,7 @@ menu:
       url: /projects/
       weight: 20
     - identifier: film
-      name: Photos
+      name: Pics
       url: /film/
       weight: 25
     - identifier: about-me

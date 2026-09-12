@@ -1,8 +1,9 @@
 .comic-costume { display: none; }
 .comic-toggle { padding: 0 2px; border: 0; background: none; color: inherit; font: inherit; line-height: inherit; cursor: pointer; }
-.comic-toggle:hover, .comic-toggle[aria-pressed="true"] { color: #e65365; }
+.comic-toggle:hover, .comic-toggle.comic-selected { color: #e65365; }
 .comic-toggle:focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; }
-.tennis-comic .comic-costume { display: inline; }
+[data-characters="calvin-hobbes"] .calvin, [data-characters="calvin-hobbes"] .hobbes,
+[data-characters="scooby-shaggy"] .shaggy, [data-characters="scooby-shaggy"] .scooby { display: inline; }
 .tennis-comic .player > circle, .tennis-comic .tennis-cap, .tennis-comic .tennis-cap-brim, .tennis-comic .tennis-bandana, .tennis-comic .tennis-bandana-ties { display: none; }
 .player .comic-costume path { fill: inherit; }
 .player .comic-costume [fill="#e94b3c"] { fill: #e94b3c; }
