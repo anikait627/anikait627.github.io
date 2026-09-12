@@ -3,7 +3,7 @@
     {{- if site.Copyright }}
     {{- $heart := `<span class="footer-heart">♡</span>` }}
     {{- if .IsHome }}
-    {{- $heart = `<button class="footer-heart comic-toggle" type="button" aria-pressed="false" aria-label="Play tennis with Calvin and Hobbes" title="A little childhood nostalgia">♡</button>` }}
+    {{- $heart = `<button class="footer-heart comic-toggle" type="button" aria-label="Choose a random cartoon tennis pair" title="A little childhood nostalgia">♡</button>` }}
     {{- end }}
     <span>{{ site.Copyright | markdownify | replaceRE "♡" $heart | safeHTML }}</span>
     {{- else }}

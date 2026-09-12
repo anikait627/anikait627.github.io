@@ -120,6 +120,9 @@
             </div>
         </div>
         {{- $currentPage := . }}
+        <button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open navigation">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 6H20M4 12H20M4 18H20"/></svg>
+        </button>
         <ul id="menu">
             {{- range site.Menus.main }}
             {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
@@ -147,3 +150,4 @@
         </ul>
     </nav>
 </header>
+<script src="{{ "js/mobile-nav.js" | relURL }}" defer></script>

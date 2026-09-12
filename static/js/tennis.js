@@ -8,7 +8,7 @@
     let botMiss = false;
     let lastPoint = null;
     function renderResult() {
-      const names = court.classList.contains('tennis-comic') ? ['Calvin', 'Hobbes'] : ['You', 'Anikait'];
+      const names = [court.dataset.nearName || 'You', court.dataset.farName || 'Anikait'];
       names.forEach((name, player) => { court.querySelector(`[data-player="${player}"]`).textContent = name; });
       if (!lastPoint) return;
       const { winner, wonGame } = lastPoint;
