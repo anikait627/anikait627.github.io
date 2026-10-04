@@ -15,8 +15,21 @@
 
   <div class="film-grid">
     {{- range $i, $img := .Resources.ByType "image" }}
+    {{- $thumb := $img.Fit "480x1200 webp q78" }}
+    {{- $thumbLarge := $thumb }}
+    {{- if or (gt $img.Width $thumb.Width) (gt $img.Height $thumb.Height) }}
+      {{- $thumbLarge = $img.Fit "800x1800 webp q82" }}
+    {{- end }}
     <a class="film-grid-item" href="{{ $img.RelPermalink }}" data-index="{{ $i }}" rel="noopener">
-      <img src="{{ $img.RelPermalink }}" loading="lazy" alt="{{ $.Title }} photo">
+      <img
+        src="{{ $thumb.RelPermalink }}"
+        srcset="{{ $thumb.RelPermalink }} {{ $thumb.Width }}w{{ if gt $thumbLarge.Width $thumb.Width }}, {{ $thumbLarge.RelPermalink }} {{ $thumbLarge.Width }}w{{ end }}"
+        sizes="(max-width: 600px) 50vw, (max-width: 950px) 33vw, 240px"
+        width="{{ $thumb.Width }}"
+        height="{{ $thumb.Height }}"
+        loading="lazy"
+        decoding="async"
+        alt="{{ $.Title }} photo">
     </a>
     {{- end }}
   </div>
