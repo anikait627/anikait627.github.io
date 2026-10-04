@@ -1,8 +1,15 @@
 .film-grid {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     align-items: flex-start;
     gap: 6px;
     margin-top: var(--content-gap);
+}
+
+/* Match the eventual masonry layout before JavaScript runs. This keeps all
+   lazy images from briefly occupying the first row and loading at once. */
+.film-grid[data-columns] {
+    display: flex;
 }
 
 .film-grid-col {
@@ -24,6 +31,7 @@
     display: block;
     width: 100%;
     height: auto;
+    background: var(--entry);
     transition: transform 0.25s ease;
 }
 
@@ -101,5 +109,6 @@ body.film-lightbox-open {
 }
 
 @media (max-width: 600px) {
+    .film-grid:not([data-columns]) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .film-lightbox-prev, .film-lightbox-next { font-size: 2rem; padding: 0.5rem; }
 }

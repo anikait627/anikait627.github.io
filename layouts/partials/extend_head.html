@@ -1,0 +1,13 @@
+{{- if eq .RelPermalink "/me/" -}}
+  {{- with .Resources.GetMatch "images/flower.jpg" -}}
+    {{- $portrait := .Resize "300x webp q82" -}}
+    {{- $portraitRetina := .Resize "600x webp q82" -}}
+<link rel="preload"
+      as="image"
+      href="{{ $portrait.RelPermalink }}"
+      imagesrcset="{{ $portrait.RelPermalink }} {{ $portrait.Width }}w, {{ $portraitRetina.RelPermalink }} {{ $portraitRetina.Width }}w"
+      imagesizes="(max-width: 360px) calc(100vw - 48px), 300px"
+      type="{{ $portrait.MediaType.Type }}"
+      fetchpriority="high">
+  {{- end -}}
+{{- end -}}

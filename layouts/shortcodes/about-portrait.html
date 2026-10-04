@@ -1,0 +1,18 @@
+{{- $src := .Get "src" -}}
+{{- with .Page.Resources.GetMatch $src -}}
+  {{- $portrait := .Resize "300x webp q82" -}}
+  {{- $portraitRetina := .Resize "600x webp q82" -}}
+<figure class="align-center">
+  <img
+    src="{{ $portrait.RelPermalink }}"
+    srcset="{{ $portrait.RelPermalink }} {{ $portrait.Width }}w, {{ $portraitRetina.RelPermalink }} {{ $portraitRetina.Width }}w"
+    sizes="(max-width: 360px) calc(100vw - 48px), 300px"
+    width="{{ $portrait.Width }}"
+    height="{{ $portrait.Height }}"
+    loading="eager"
+    fetchpriority="high"
+    alt="Illustration of Anikait Sharma">
+</figure>
+{{- else -}}
+  {{- errorf "About portrait resource %q was not found" $src -}}
+{{- end -}}
