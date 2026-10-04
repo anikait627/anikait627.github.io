@@ -6,7 +6,7 @@ slug: me
 #     image: images/flower.jpg
 ---
 
-{{< figure align=center width=300px height=auto src="images/flower.jpg" >}}
+{{< about-portrait src="images/flower.jpg" >}}
 
 Hey there 👋
 
